@@ -1,49 +1,68 @@
 ---
-import {gsap} from 'gsap';
+import { gsap } from "gsap";
 ---
-<nav id="main-nav" class="bg-transparent font-alata text-sm fixed top-0 left-0 w-full z-50 transition-transform">
-    <div class="max-w-6xl mx-auto flex justify-between items-center py-2 px-4 h-full bg-[#44513c]">
-      <!-- Sección Izquierda -->
-      <div class="flex items-center">
-        <img src="/img/logo.svg" alt="Logo" class="w-11 mr-5" />
-        <span class="bg-gray-300 w-px h-10 mr-5"></span>
-        <ul class="flex space-x-4 text-gray-200">
-          <li><a href="#" class="hover:text-white">Inicio</a></li>
-          <li><a href="#" class="hover:text-white">Sobre Nosotros</a></li>
-          <li><a href="#" class="hover:text-white">Productos</a></li>
-          <li><a href="#" class="hover:text-white">Contacto</a></li>
-        </ul>
-      </div>
-      <!-- Sección Derecha -->
-      <div class="flex items-center space-x-2">
-        <img src="/icons/whatsapp-ico.svg" alt="WhatsApp" class="w-5 h-5" />
-        <img src="/icons/instagram-ico.svg" alt="Instagram" class="w-5 h-4" />
-        <img src="/icons/linkedin-ico.svg" alt="LinkedIn" class="w-5 h-5" />
-        <img src="/icons/mail-ico.svg" alt="Email" class="w-5 h-5" />
-      </div>
+
+<nav
+  id="main-nav"
+  class="bg-transparent font-alata text-sm fixed top-0 left-0 w-full z-50 transition-transform"
+>
+  <div
+    class="max-w-6xl mx-auto flex justify-between items-center py-2 px-4 h-full bg-[#44513c]"
+  >
+    <!-- Sección Izquierda -->
+    <div class="flex items-center">
+      <img src="/img/logo.svg" alt="Logo" class="w-11 mr-5" />
+      <span class="bg-gray-300 w-px h-10 mr-5"></span>
+      <ul class="flex space-x-4 text-gray-200 navHover">
+        <li><a href="#" class="hover:text-white">Inicio</a></li>
+        <li><a href="#" class="hover:text-white">Sobre Nosotros</a></li>
+        <li><a href="#" class="hover:text-white">Productos</a></li>
+        <li><a href="#" class="hover:text-white">Contacto</a></li>
+      </ul>
     </div>
-  </nav>
-  
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const nav = document.getElementById("main-nav");
-      let lastScrollY = window.scrollY;
-  
-      // Detectar el scroll del usuario
-      window.addEventListener("scroll", () => {
-         console.log("Scroll detectado");
-        const currentScrollY = window.scrollY;
-  
-        if (currentScrollY > lastScrollY && currentScrollY > 50) {
-          // Usuario está haciendo scroll hacia abajo
-          gsap.to(nav, { y: "-100%", duration: 0.3, ease: "power2.out" });
-        } else if (currentScrollY < lastScrollY) {
-          // Usuario está haciendo scroll hacia arriba
-          gsap.to(nav, { y: "0%", duration: 0.3, ease: "power2.out" });
-        }
-  
-        lastScrollY = currentScrollY;
-      });
+    <!-- Sección Derecha -->
+    <div class="flex items-center space-x-2 text-gray-200 navHover">
+      <img src="/icons/whatsapp-ico.svg" alt="WhatsApp" class="w-5 h-5 cursor-pointer" />
+      <img src="/icons/instagram-ico.svg" alt="Instagram" class="w-5 h-4 cursor-pointer" />
+      <img src="/icons/linkedin-ico.svg" alt="LinkedIn" class="w-5 h-5 cursor-pointer" />
+      <img src="/icons/mail-ico.svg" alt="Email" class="w-5 h-5 cursor-pointer" />
+    </div>
+  </div>
+</nav>
+
+<style>
+  .navHover img,
+  .navHover li {
+    transition: filter 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
+
+  .navHover img:hover,
+  .navHover li:hover {
+    filter: brightness(0) saturate(100%) invert(57%) sepia(79%) saturate(1314%) hue-rotate(6deg) brightness(99%) contrast(99%);
+    transform: scale(1.0); 
+  }
+</style>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const nav = document.getElementById("main-nav");
+    let lastScrollY = window.scrollY;
+
+    // Detectar el scroll del usuario
+    window.addEventListener("scroll", () => {
+      console.log("Scroll detectado");
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 50) {
+        // Usuario está haciendo scroll hacia abajo
+        gsap.to(nav, { y: "-100%", duration: 0.3, ease: "power2.out" });
+      } else if (currentScrollY < lastScrollY) {
+        // Usuario está haciendo scroll hacia arriba
+        gsap.to(nav, { y: "0%", duration: 0.3, ease: "power2.out" });
+      }
+
+      lastScrollY = currentScrollY;
     });
-  </script>
-  
+  });
+</script>
