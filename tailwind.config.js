@@ -2,10 +2,18 @@
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,ts,tsx}'],
   theme: {
-    extend: {},
-    fontFamily: {
-      alata: ['Alata', 'sans-serif'], // Define la fuente personalizada
+    extend: {
+      colors: {
+        verdeRosfin: '#44513C',
+        blancoRosfin: '#D8D8D8',
+        naranjaRosfin: '#FF7F3E',
+        negroRosfin: '#343131',
+      },
+      fontFamily: {
+        alata: ['Alata', 'sans-serif'], 
+        vina: ['Vina Sans', 'cursive'], 
+      },
     },
   },
   plugins: [],
-}
+};
