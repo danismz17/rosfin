@@ -5,6 +5,9 @@
 @import 'tailwindcss/utilities';
 
 
+body{
+  font-family: "alata", cursive;
+}
 
 #main-nav {
     position: fixed;
