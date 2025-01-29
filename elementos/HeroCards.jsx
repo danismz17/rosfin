@@ -23,7 +23,7 @@ const HeroCards = () => {
     };
 
     return (
-        <ul className="flex flex-wrap justify-center items-center gap-8">
+        <ol className="flex flex-wrap justify-center items-center gap-8">
             {options.map((option, index) => (
                 <li
                     key={index}
@@ -61,7 +61,7 @@ const HeroCards = () => {
                     </h4>
                 </li>
             ))}
-        </ul>
+        </ol>
     );
 };
 

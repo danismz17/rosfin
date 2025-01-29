@@ -1,0 +1,67 @@
+---
+import SobreNosotrosCards from "../../elementos/SobreNosotrosCards";
+import NuestrosValores from "../../elementos/NuestrosValores";
+---
+
+<section
+    class="SobreNosotros-container bg-blancoRosfin flex flex-col justify-center min-h-screen"
+>
+    <div class="w-full flex flex-row flex-1">
+        <div class="flex-1 pt-10 px-5 flex flex-col items-start justify-center">
+            <h2 class="text-start px-10 text-verdeRosfin">
+                Nuestra Historia de Excelencia
+            </h2>
+            <p class="text-start px-10 pt-5 text-verdeRosfin">
+                Con más de 60 años de experiencia en la industria metalúrgica,
+                nos hemos consolidado como líderes en la fabricación de
+                productos metálicos de alta calidad. Nuestra dedicación a la
+                excelencia y la innovación nos ha permitido crecer y
+                evolucionar, manteniendo siempre los más altos estándares de
+                calidad. Utilizamos tecnología de vanguardia y contamos con un
+                equipo altamente calificado para garantizar que cada proyecto
+                cumpla con las especificaciones más exigentes del mercado
+                actual.
+            </p>
+        </div>
+
+        <div class="flex-1 pt-10 px-5 flex flex-col items-center">
+            <div class="SN-card-container">
+                <SobreNosotrosCards />
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full flex-1 text-white flex justify-center">
+        <div class="w-full flex-1 text-white flex  flex-col items-center">
+            <h2 class="text-start text-verdeRosfin">Nuestros Valores</h2>
+            <div class="w-full h-full flex flex-row justify-center items-center">
+                <NuestrosValores/>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .SobreNosotros-container {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .SobreNosotros-container h2 {
+            font-size: clamp(24px, 4vw, 40px); /* Mínimo 24px, ideal 4% del ancho, máximo 40px */
+        }
+
+        .SobreNosotros-container p {
+            font-size: clamp(16px, 2.5vw, 24px); /* Mínimo 16px, ideal 2.5% del ancho, máximo 24px */
+        }
+
+        .SN-card-container {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    </style>
+</section>

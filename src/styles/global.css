@@ -9,6 +9,16 @@ body{
   font-family: "alata", cursive;
 }
 
+h1 {
+  font-size: clamp(2rem, 10vw, 18.75rem);
+  font-family: "Vina Sans", cursive;
+  padding-left: 5%;
+}
+
+h2 {
+  font-size: clamp(1rem, 5vw, 2rem);
+}
+
 #main-nav {
     position: fixed;
     top: 0;
