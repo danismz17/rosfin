@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import { motion } from 'framer-motion';
 
 const HeroCards = () => {
     const [hoverIndex, setHoverIndex] = useState(null);
@@ -25,14 +26,17 @@ const HeroCards = () => {
     return (
         <ol className="flex flex-wrap justify-center items-center gap-8">
             {options.map((option, index) => (
-                <li
+                <motion.li
                     key={index}
                     className="flex flex-col items-center space-y-4 px-8 py-8 bg-slate-300"
                     onMouseEnter={() => handleMouseEnter(index)}
                     onMouseLeave={() => handleMouseLeave(index)}
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: index * 0.2 }}
                 >
                     <div className="overflow-hidden">
-                        <video
+                        <motion.video
                             ref={(el) => (videoRefs.current[index] = el)} // Referencia del video
                             src={option.video}
                             className="transition duration-300"
@@ -51,15 +55,15 @@ const HeroCards = () => {
                             loop
                             muted
                             playsInline
-                        ></video>
+                        ></motion.video>
                     </div>
                     <h4
                         className="text-center"
-                        style={{ fontSize: '20px', paddingTop: '10px', paddingBottom: '20px', letterSpacing: '1.2px'}}
+                        style={{ fontSize: '20px', paddingTop: '10px', paddingBottom: '20px', letterSpacing: '1.2px' }}
                     >
                         {option.title}
                     </h4>
-                </li>
+                </motion.li>
             ))}
         </ol>
     );

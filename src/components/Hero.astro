@@ -19,8 +19,7 @@ const {} = Astro.props;
     </section>
 
     <div
-        class="w-full bg-refd-800 h-auto flex justify-center items-center gap-8 text-blancoRosfin pt-[5%] flex-wrap"
-    >
+        class="w-full relative bottom-4 h-auto flex justify-center items-center gap-8 text-blancoRosfin flex-wrap">
         <HeroCards client:visible />
     </div>
 </div>
@@ -35,14 +34,7 @@ const {} = Astro.props;
         /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     }
 
-    .h1-hero {
-        font-size: clamp(2rem, 10vw, 18.75rem);
-        font-family: "Vina Sans", cursive;
-        padding-left: 5%;
-    }
-
-    .h2-hero {
-        font-size: clamp(1rem, 5vw, 2rem);
+    .h2-hero {    
         padding-left: 5%;
     }
 

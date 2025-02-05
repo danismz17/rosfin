@@ -1,3 +1,6 @@
+import React from "react";
+import { motion } from "framer-motion";
+
 const data = [
     {
         imgSrc: "/icons/trayectoria.png",
@@ -46,7 +49,7 @@ const SobreNosotrosCards = () => {
                         }
                     }
                 >
-                    <img src={item.imgSrc} alt={item.title} className="h-12 object-contain" />
+                    <img src={item.imgSrc} alt={item.title} className="object-contain" style={{height:'48px'}} />
                     <h4 style={
                         {
                             fontSize: '24px',
