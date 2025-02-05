@@ -16,7 +16,17 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(1rem, 5vw, 2rem);
+  font-size: clamp(1.75rem, 6vw, 3.5rem); /* 28px - 56px */
+}
+
+h3 {
+  font-size: clamp(1.5rem, 4vw, 2.75rem); /* 24px - 44px */
+  color: #D8D8D8;
+}
+
+h4 {
+  font-size: clamp(1.25rem, 3vw, 2rem); /* 20px - 32px */
+  color: #D8D8D8;
 }
 
 #main-nav {
@@ -27,3 +37,13 @@ h2 {
     z-index: 50; /* Asegúrate de que el nav esté sobre otros elementos */
   }
   
+
+  .btn-primary {
+    @apply  my-10 ml-[2%] bg-negroRosfin text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-opacity-90 transition ease-in-out duration-300 flex justify-center items-center;
+    letter-spacing: 1px;
+}
+
+  .btn-primary img {
+ height: 24px;
+ padding-right: 12px;
+}

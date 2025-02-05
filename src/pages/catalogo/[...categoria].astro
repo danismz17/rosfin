@@ -1,0 +1,33 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const { categoria } = Astro.props.params;
+const productos = {
+  electronica: [
+    { nombre: "Laptop Gamer", precio: "$1200", imagen: "/assets/laptop.jpg" },
+    { nombre: "Smartphone", precio: "$800", imagen: "/assets/smartphone.jpg" }
+  ],
+  muebles: [
+    { nombre: "Silla de oficina", precio: "$150", imagen: "/assets/silla.jpg" },
+    { nombre: "Mesa de comedor", precio: "$500", imagen: "/assets/mesa.jpg" }
+  ]
+};
+
+const productosCategoria = productos[categoria] || [];
+---
+
+<Layout>
+  <h2>Productos en {categoria}</h2>
+  {productosCategoria.length > 0 ? (
+    <ul>
+      {productosCategoria.map((producto) => (
+        <li>
+          <img src={producto.imagen} alt={producto.nombre} />
+          <p>{producto.nombre} - {producto.precio}</p>
+        </li>
+      ))}
+    </ul>
+  ) : (
+    <p>No hay productos en esta categoría.</p>
+  )}
+</Layout>
