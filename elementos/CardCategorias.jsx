@@ -83,7 +83,7 @@ const CardCategorias = ({ title, ico, video, cantidad }) => {
       >
         {title}
       </h3>
-      <p className="text-blancoRosfin">{cantidad} elementos</p>
+      <p className='p-cards text-blancoRosfin'>{cantidad} elementos</p>
       <button className="btn-primary">Ver Artículos</button>
     </div>
   );

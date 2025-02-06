@@ -57,10 +57,7 @@ const HeroCards = () => {
                             playsInline
                         ></motion.video>
                     </div>
-                    <h4
-                        className="text-center"
-                        style={{ fontSize: '20px', paddingTop: '10px', paddingBottom: '20px', letterSpacing: '1.2px' }}
-                    >
+                    <h4 className="text-center">
                         {option.title}
                     </h4>
                 </motion.li>

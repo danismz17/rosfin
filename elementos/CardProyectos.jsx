@@ -41,22 +41,10 @@ const CardProyectos = () => {
                         alt={proyecto.title} 
                         style={{ height: '80px', marginBottom: '15px' }} 
                     />
-                    <h4 
-                        style={{ 
-                            fontSize: '24px', 
-                            color: '#D8D8D8', 
-                            fontWeight: 'bold', 
-                            letterSpacing: '1px' 
-                        }}
-                    >
+                    <h4>
                         {proyecto.title}
                     </h4>
-                    <p 
-                        style={{ 
-                            color: '#D8D8D8', 
-                            letterSpacing: '.3px' 
-                        }}
-                    >
+                    <p className='p-cards text-blancoRosfin'>
                         {proyecto.description}
                     </p>
                 </li>

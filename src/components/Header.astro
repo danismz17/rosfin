@@ -43,15 +43,24 @@ import AOSInitializer from "../../elementos/AOSInitializer.jsx";
     filter: brightness(0) saturate(100%) invert(57%) sepia(79%) saturate(1314%) hue-rotate(6deg) brightness(99%) contrast(99%);
     transform: scale(1.0); 
   }
-  
-  .scrolled {
-    background-color: #000000cc;
-    transition: background-color 0.3s ease-in-out;
+
+  .fade-down {
+    transform: translateY(-100%);
+    opacity: 0;
+    background-color: #00000000;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out, background-color 0.5s ease-out;
+  }
+
+  .fade-up {
+    transform: translateY(0);
+    opacity: 1;
+    background-color: #343131;
+    transition: transform 0.5s ease-in, opacity 0.5s ease-in, background-color 0.5s ease-in;
   }
 
   .transparent {
-    background-color: #00000000;
-    transition: background-color 0.3s ease-in-out;
+    background-color: transparent;
+    transition: background-color 0.5s ease;
   }
 </style>
 
@@ -66,22 +75,21 @@ document.addEventListener("DOMContentLoaded", () => {
     const currentScrollY = window.scrollY;
 
     if (currentScrollY > lastScrollY && currentScrollY > 50) {
-      nav.style.transform = "translateY(-100%)";
-      nav.classList.remove("scrolled");
-      nav.classList.add("transparent");
+      nav.classList.remove("fade-up");
+      nav.classList.add("fade-down");
     } else if (currentScrollY < lastScrollY) {
-      nav.style.transform = "translateY(0)";
-      nav.classList.add("scrolled");
-      nav.classList.remove("transparent");
+      nav.classList.remove("fade-down");
+      nav.classList.add("fade-up");
     }
 
     if (currentScrollY === 0) {
-      nav.classList.remove("scrolled");
+      nav.classList.remove("fade-up", "fade-down");
       nav.classList.add("transparent");
+    } else {
+      nav.classList.remove("transparent");
     }
 
     lastScrollY = currentScrollY;
   });
 });
-
 </script>

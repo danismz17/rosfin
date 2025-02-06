@@ -17,6 +17,7 @@ h1 {
 
 h2 {
   font-size: clamp(1.75rem, 6vw, 3.5rem); /* 28px - 56px */
+  /* font-size: clamp(24px, 4vw, 40px); */
 }
 
 h3 {
@@ -25,8 +26,20 @@ h3 {
 }
 
 h4 {
-  font-size: clamp(1.25rem, 3vw, 2rem); /* 20px - 32px */
+  /*font-size: clamp(1.25rem, 3vw, 2rem); /* 20px - 32px */
+  font-size: clamp(1rem, 3vw, 1.5rem);
   color: #D8D8D8;
+  letter-spacing: 1.0px;
+  font-weight: bold;
+}
+
+p{
+  font-size: clamp(16px, 2.5vw, 24px);
+}
+
+.p-cards{
+  font-size: clamp(0.75rem, 3vw, 1rem);
+
 }
 
 #main-nav {

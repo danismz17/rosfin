@@ -52,16 +52,8 @@ const SobreNosotrosCards = () => {
                     }
                 >
                     <img src={item.imgSrc} alt={item.title} className="object-contain" style={{height:'48px'}} />
-                    <h4 style={
-                        {
-                            fontSize: '24px',
-                            fontWeight: '600',
-                            letterSpacing: '1.2px',
-                        }
-                    }>{item.title}</h4>
-                    <p style={
-                        { fontSize: '16px', lineHeight: '1.5' }
-                    }>{item.description}</p>
+                    <h4>{item.title}</h4>
+                    <p className='p-cards'>{item.description}</p>
                 </li>
             ))}
         </ol>
