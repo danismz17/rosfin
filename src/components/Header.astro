@@ -1,7 +1,9 @@
 ---
-import { gsap } from "gsap";
+import 'aos/dist/aos.css';
+import AOSInitializer from "../../elementos/AOSInitializer.jsx";
 ---
 
+<AOSInitializer client:load />
 <nav
   id="main-nav"
   class="bg-transparent font-alata text-sm fixed top-0 left-0 w-full z-50 transition-transform"
@@ -41,28 +43,45 @@ import { gsap } from "gsap";
     filter: brightness(0) saturate(100%) invert(57%) sepia(79%) saturate(1314%) hue-rotate(6deg) brightness(99%) contrast(99%);
     transform: scale(1.0); 
   }
+  
+  .scrolled {
+    background-color: #000000cc;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .transparent {
+    background-color: #00000000;
+    transition: background-color 0.3s ease-in-out;
+  }
 </style>
 
-
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const nav = document.getElementById("main-nav");
-    let lastScrollY = window.scrollY;
+document.addEventListener("DOMContentLoaded", () => {
+  const nav = document.getElementById("main-nav");
+  if (!nav) return; // Verifica si 'nav' existe antes de usarlo
 
-    // Detectar el scroll del usuario
-    window.addEventListener("scroll", () => {
-      console.log("Scroll detectado");
-      const currentScrollY = window.scrollY;
+  let lastScrollY = window.scrollY;
 
-      if (currentScrollY > lastScrollY && currentScrollY > 50) {
-        // Usuario está haciendo scroll hacia abajo
-        gsap.to(nav, { y: "-100%", duration: 0.3, ease: "power2.out" });
-      } else if (currentScrollY < lastScrollY) {
-        // Usuario está haciendo scroll hacia arriba
-        gsap.to(nav, { y: "0%", duration: 0.3, ease: "power2.out" });
-      }
+  window.addEventListener("scroll", () => {
+    const currentScrollY = window.scrollY;
 
-      lastScrollY = currentScrollY;
-    });
+    if (currentScrollY > lastScrollY && currentScrollY > 50) {
+      nav.style.transform = "translateY(-100%)";
+      nav.classList.remove("scrolled");
+      nav.classList.add("transparent");
+    } else if (currentScrollY < lastScrollY) {
+      nav.style.transform = "translateY(0)";
+      nav.classList.add("scrolled");
+      nav.classList.remove("transparent");
+    }
+
+    if (currentScrollY === 0) {
+      nav.classList.remove("scrolled");
+      nav.classList.add("transparent");
+    }
+
+    lastScrollY = currentScrollY;
   });
+});
+
 </script>
