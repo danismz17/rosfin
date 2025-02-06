@@ -1,4 +1,5 @@
 import React from 'react';
+import AOSInitializer from '../elementos/AOSInitializer';
 
 const proyectos = [
     {
@@ -17,8 +18,11 @@ const CardProyectos = () => {
     return (
         <div className="flex flex-wrap justify-center gap-4">
             {proyectos.map((proyecto, index) => (
-                <div 
-                    key={index} 
+                <li 
+                    key={index}
+                    data-aos="zoom-in" // Efecto de entrada desde el centro
+                    data-aos-delay={index * 200} // Retraso basado en el índice
+                    data-aos-duration="800" // Duración de la animación
                     style={{
                         width: '560px',
                         display: 'flex',
@@ -55,7 +59,7 @@ const CardProyectos = () => {
                     >
                         {proyecto.description}
                     </p>
-                </div>
+                </li>
             ))}
         </div>
     );

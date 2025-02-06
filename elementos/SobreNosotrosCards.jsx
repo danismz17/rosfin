@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 
 const data = [
     {
@@ -30,6 +29,9 @@ const SobreNosotrosCards = () => {
             {data.map((item, index) => (
                 <li
                     key={index}
+                    data-aos="zoom-in" // Efecto de entrada desde el centro
+                    data-aos-delay={index * 200} // Retraso basado en el índice
+                    data-aos-duration="500" // Duración de la animación
                     style={
                         {
                             width: '268px',

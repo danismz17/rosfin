@@ -1,14 +1,18 @@
 ---
+import "aos/dist/aos.css";
 import SobreNosotrosCards from "../../elementos/SobreNosotrosCards";
 import NuestrosValores from "../../elementos/NuestrosValores";
+import AOSInitializer from "../../elementos/AOSInitializer.jsx";
 ---
+
+<AOSInitializer client:load />
 
 <section
     class="SobreNosotros-container bg-blancoRosfin flex flex-col justify-center min-h-screen"
 >
     <div class="w-full flex flex-row flex-1">
-        <div class="flex-1 pt-10 px-5 flex flex-col items-start justify-center">
-            <h2 class="text-start px-10 text-verdeRosfin">
+        <div data-aos="fade-right" class="flex-1 pt-10 px-5 flex flex-col items-start justify-center">
+            <h2 data-aos="fade-right" class="text-start px-10 text-verdeRosfin">
                 Nuestra Historia de Excelencia
             </h2>
             <p class="text-start px-10 pt-5 text-verdeRosfin">
@@ -31,9 +35,9 @@ import NuestrosValores from "../../elementos/NuestrosValores";
         </div>
     </div>
 
-    <div class="w-full flex-1 text-white flex justify-center">
-        <div class="w-full flex-1 text-white flex  flex-col items-center">
-            <h2 class="text-start text-verdeRosfin">Nuestros Valores</h2>
+    <div  class="w-full flex-1 text-white flex justify-center">
+        <div  class="w-full flex-1 text-white flex  flex-col items-center">
+            <h2 data-aos="fade-left" class="text-start text-verdeRosfin">Nuestros Valores</h2>
             <div class="w-full h-full flex flex-row justify-center items-center">
                 <NuestrosValores/>
             </div>
