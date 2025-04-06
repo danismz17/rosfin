@@ -37,6 +37,10 @@ p{
   font-size: clamp(16px, 2.5vw, 24px);
 }
 
+.section-Container{
+  height: 100vh;
+}
+
 .p-cards{
   font-size: clamp(0.75rem, 3vw, 1rem);
 
