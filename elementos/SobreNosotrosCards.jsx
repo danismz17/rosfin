@@ -33,7 +33,7 @@ const SobreNosotrosCards = () => {
   data-aos-delay={index * 200}
   data-aos-duration="500"
   className="w-[268px] h-[225px] bg-[#4B5945] flex flex-col justify-center items-start pt-2 pb-2 px-4 text-[#D8D8D8] text-left hover:shadow-lg transition"
-  style={{ borderRadius: '20px', margin: '10px', padding: '20px' }}
+  style={{ borderRadius: '20px', margin: '10px', padding: '20px',color: '#D8D8D8' }}
   data-aos-easing="ease-in-out"
 
 >

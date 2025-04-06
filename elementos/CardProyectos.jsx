@@ -24,7 +24,7 @@ const CardProyectos = () => {
                     data-aos-delay={index * 200} // Retraso basado en el índice
                     data-aos-duration="800" // Duración de la animación
                     style={{
-                        width: '560px',
+                        maxwidth: '400px',
                         display: 'flex',
                         flexDirection: 'column',
                         alignItems: 'center',

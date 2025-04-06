@@ -25,7 +25,7 @@ const NuestrosValores = () => {
         }}>
             {data.map((item, index) => (
                 <li key={index} style={{
-                    width: '400px',
+                    maxWidth: '400px',
                     height: '225px',
                     backgroundColor: '#4B5945',
                     borderRadius: '20px',
