@@ -4,67 +4,83 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+/* ============ TIPOGRAFÍA ============ */
 
-body{
-  font-family: "alata", cursive;
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: "Alata", sans-serif;
+  word-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
 }
 
-h1 {
-  font-size: clamp(2rem, 12vw, 18.75rem);
-  font-family: "Vina Sans", cursive;
+/* Evita el zoom incorrecto y escalado raro en Chrome mobile */
+html {
+  touch-action: manipulation;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
 
+
+h1 {
+  font-size: clamp(2rem, 6vw, 5rem); /* 32px - 80px aprox */
+  font-family: "Vina Sans", cursive;
 }
 
 h2 {
-  font-size: clamp(1.75rem, 6vw, 3.5rem); /* 28px - 56px */
-  /* font-size: clamp(24px, 4vw, 40px); */
+  font-size: clamp(1.75rem, 4.5vw, 3rem); /* 28px - 48px aprox */
 }
 
 h3 {
-  font-size: clamp(1.5rem, 4vw, 2.75rem); /* 24px - 44px */
+  font-size: clamp(1.25rem, 4vw, 2.5rem); /* 20px - 40px aprox */
   color: #D8D8D8;
 }
 
 h4 {
-  /*font-size: clamp(1.25rem, 3vw, 2rem); /* 20px - 32px */
-  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-size: clamp(1rem, 2.5vw, 1.5rem); /* 16px - 24px aprox */
   color: #D8D8D8;
-  letter-spacing: 1.0px;
+  letter-spacing: 1px;
   font-weight: bold;
 }
 
-p{
-  font-size: clamp(16px, 2.5vw, 24px);
+p {
+  font-size: clamp(0.95rem, 2.5vw, 1.125rem); /* 15px - 18px */
 }
 
-.section-Container{
-  height: 100vh;
+.p-cards {
+  font-size: clamp(0.85rem, 2.5vw, 1rem); /* 13.6px - 16px */
 }
 
-.p-cards{
-  font-size: clamp(0.75rem, 3vw, 1rem);
+/* ============ CONTENEDORES ============ */
 
+.section-Container {
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 #main-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 50; /* Asegúrate de que el nav esté sobre otros elementos */
-  }
-  
-
-  .btn-primary {
-    @apply  my-10 ml-[2%] bg-negroRosfin text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-opacity-90 transition ease-in-out duration-300 flex justify-center items-center;
-    letter-spacing: 1px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
 }
 
-  .btn-primary img {
- height: 24px;
- padding-right: 12px;
+/* ============ BOTONES ============ */
+
+.btn-primary {
+  @apply my-10 ml-[2%] bg-negroRosfin text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-opacity-90 transition ease-in-out duration-300 flex justify-center items-center;
+  letter-spacing: 1px;
 }
 
+.btn-primary img {
+  height: 24px;
+  padding-right: 12px;
+}
+
+/* ============ MEDIA QUERIES ============ */
+
+/* Ajuste especial para pantallas muy pequeñas */
 @media (max-width: 400px) {
   #heroDistri {
     flex-direction: column;
@@ -82,7 +98,7 @@ p{
   #heroDistri img {
     --tw-translate-x: 0 !important;
     padding-top: 140px;
-    width: 200px; /* o 60% si preferís */
+    width: 200px;
   }
 
   #heroDistri h1,
@@ -94,7 +110,6 @@ p{
     margin-left: auto;
   }
 }
-
 
 /* iPad (768x1024) */
 @media (min-width: 768px) and (max-width: 1023px) {
