@@ -12,7 +12,7 @@ body{
 h1 {
   font-size: clamp(2rem, 12vw, 18.75rem);
   font-family: "Vina Sans", cursive;
-  padding-left: 5%;
+
 }
 
 h2 {
@@ -59,4 +59,68 @@ p{
   .btn-primary img {
  height: 24px;
  padding-right: 12px;
+}
+
+@media (max-width: 400px) {
+  #heroDistri {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #heroDistri > div:first-child {
+    order: 2;
+  }
+
+  #heroDistri > div:last-child {
+    order: 1;
+  }
+
+  #heroDistri img {
+    --tw-translate-x: 0 !important;
+    padding-top: 140px;
+    width: 200px; /* o 60% si preferís */
+  }
+
+  #heroDistri h1,
+  #heroDistri h3 {
+    margin: 0 auto;
+  }
+
+  #heroDistri button {
+    margin-left: auto;
+  }
+}
+
+
+/* iPad (768x1024) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+}
+
+/* Macbook Pro / PC MID (1440x900 y 1440x1024) */
+@media (min-width: 1440px) and (max-width: 1535px) {
+  h1 {
+    font-size: 6rem;
+  }
+
+  h3 {
+    font-size: 2.25rem;
+  }
+}
+
+/* PC LG (1920x1080) */
+@media (min-width: 1920px) {
+  h1 {
+    font-size: 8rem;
+  }
+
+  h3 {
+    font-size: 2.75rem;
+  }
 }

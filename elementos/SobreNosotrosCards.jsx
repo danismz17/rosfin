@@ -25,38 +25,30 @@ const data = [
 
 const SobreNosotrosCards = () => {
     return (
-        <ol className="flex flex-wrap gap-4 justify-center">
-            {data.map((item, index) => (
-                <li
-                    key={index}
-                    data-aos="zoom-in" // Efecto de entrada desde el centro
-                    data-aos-delay={index * 200} // Retraso basado en el índice
-                    data-aos-duration="500" // Duración de la animación
-                    style={
-                        {
-                            width: '268px',
-                            height: '225px',
-                            backgroundColor: '#4B5945',
-                            borderRadius: '20px',
-                            display: 'flex',
-                            flexDirection: 'column',
-                            justifyContent: 'center',
-                            alignItems: 'start',
-                            paddingTop: '8px',
-                            paddingBottom: '8px',
-                            paddingInline: '16px',
-                            color: '#D8D8D8',
-                            textAlign: 'start',
-                            margin: '8px',
-                        }
-                    }
-                >
-                    <img src={item.imgSrc} alt={item.title} className="object-contain" style={{height:'48px'}} />
-                    <h4>{item.title}</h4>
-                    <p className='p-cards'>{item.description}</p>
-                </li>
-            ))}
-        </ol>
+        <ol className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-10 max-w-screen-md w-full mx-auto px-4">
+        {data.map((item, index) => (
+            <li
+  key={index}
+  data-aos="zoom-in"
+  data-aos-delay={index * 200}
+  data-aos-duration="500"
+  className="w-[268px] h-[225px] bg-[#4B5945] flex flex-col justify-center items-start pt-2 pb-2 px-4 text-[#D8D8D8] text-left hover:shadow-lg transition"
+  style={{ borderRadius: '20px', margin: '10px', padding: '20px' }}
+  data-aos-easing="ease-in-out"
+
+>
+  <img
+    src={item.imgSrc}
+    alt={item.title}
+    className="h-12 object-contain mb-2"
+  />
+  <h4 className="text-white font-bold text-lg mb-1">{item.title}</h4>
+  <p className="text-sm">{item.description}</p>
+</li>
+
+        ))}
+      </ol>
+  
     );
 };
 

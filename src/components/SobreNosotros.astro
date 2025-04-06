@@ -8,34 +8,27 @@ import AOSInitializer from "../../elementos/AOSInitializer.jsx";
 <AOSInitializer client:load />
 
 <section
-    class="SobreNosotros-container bg-blancoRosfin flex flex-col justify-center min-h-screen"
+    class="SobreNosotros-container bg-blancoRosfin flex flex-col justify-center min-h-screen pb-20"
 >
-    <div class="w-full flex flex-row flex-1">
-        <div data-aos="fade-right" class="flex-1 pt-10 px-5 flex flex-col items-start justify-center">
-            <h2 data-aos="fade-right" class="text-start px-10 text-verdeRosfin">
-                Nuestra Historia de Excelencia
-            </h2>
-            <p class="text-start px-10 pt-5 text-verdeRosfin">
-                Con más de 60 años de experiencia en la industria metalúrgica,
-                nos hemos consolidado como líderes en la fabricación de
-                productos metálicos de alta calidad. Nuestra dedicación a la
-                excelencia y la innovación nos ha permitido crecer y
-                evolucionar, manteniendo siempre los más altos estándares de
-                calidad. Utilizamos tecnología de vanguardia y contamos con un
-                equipo altamente calificado para garantizar que cada proyecto
-                cumpla con las especificaciones más exigentes del mercado
-                actual.
-            </p>
-        </div>
-
-        <div class="flex-1 pt-10 px-5 flex flex-col items-center">
-            <div class="SN-card-container">
-                <SobreNosotrosCards />
-            </div>
-        </div>
+<div class="w-full flex flex-col lg:flex-row flex-1">
+    <!-- Bloque de texto -->
+    <div class="flex-1 pt-10 px-5 flex flex-col items-center justify-center order-1 lg:order-1">
+      <h2 data-aos="fade-right" class="text-start px-10 text-verdeRosfin">Nuestra Historia de Excelencia</h2>
+      <p class="text-start px-10 pt-5 text-verdeRosfin">
+        Con más de 60 años de experiencia en la industria metalúrgica, nos hemos consolidado como líderes en la fabricación de productos metálicos de alta calidad. Nuestra dedicación a la excelencia y la innovación nos ha permitido crecer y evolucionar, manteniendo siempre los más altos estándares de calidad. Utilizamos tecnología de vanguardia y contamos con un equipo altamente calificado para garantizar que cada proyecto cumpla con las especificaciones más exigentes del mercado actual.
+      </p>
     </div>
+  
+    <!-- Bloque de tarjetas -->
+    <div class="flex-1 pt-10 px-5 flex flex-col items-center order-2 lg:order-2">
+      <div class="SN-card-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full px-4">
+        <SobreNosotrosCards />
+      </div>
+    </div>
+  </div>
+  
 
-    <div  class="w-full flex-1 text-white flex justify-center">
+    <div  class="w-full flex-1 text-white flex justify-center mt-20">
         <div  class="w-full flex-1 text-white flex  flex-col items-center">
             <h2 data-aos="fade-left" class="text-start text-verdeRosfin">Nuestros Valores</h2>
             <div class="w-full h-full flex flex-row justify-center items-center">
