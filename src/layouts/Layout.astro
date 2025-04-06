@@ -6,7 +6,7 @@ import Footer from '../components/Footer.astro';
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="icon" type="image/svg+xml" href="/img/logo.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>Rosfin Metalurgica S.A</title>
@@ -14,8 +14,9 @@ import Footer from '../components/Footer.astro';
   <body>
     <slot />
   </body>
-  <Footer/>	
+  <Footer/>
 </html>
+
 <style>
   html,
   body {
