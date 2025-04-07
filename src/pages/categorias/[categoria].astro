@@ -1,31 +1,56 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
+import categorias from '../../data/categorias.json';
+import articulos from '../../data/articulos.json';
+import CardProductos from '../../elementos/CardProductos';
 
 export async function getStaticPaths() {
-  return [
-    { params: { categoria: 'mecanica' } },
-    { params: { categoria: 'muebles' } },
-    { params: { categoria: 'electricidad' } },
-    { params: { categoria: 'construccion' } },
-    { params: { categoria: 'ferreteria' } },
-    { params: { categoria: 'trabajosamedida' } },
-  ];
+  return categorias.map((cat) => ({
+    params: { categoria: cat.slug }
+  }));
 }
 
 const { categoria } = Astro.params;
+const categoriaActual = categorias.find(cat => cat.slug === categoria);
+const iconoCategoria = categoriaActual?.ico || "/icons/default.png";
+const productos = articulos[categoria as keyof typeof articulos] || [];
 ---
 
 <Layout>
   <Header />
 
-  <section class="pt-32 pb-20 px-6 min-h-screen bg-[#270707]">
-    <h1 class="text-3xl font-bold text-center mb-8 text-verdeRosfin">
-      Estás viendo la categoría: {categoria}
-    </h1>
+  <section class="pt-32 pb-20 px-6 min-h-screen bg-[#DCDCDC] flex flex-col items-center">
 
-    <p class="text-center text-gray-700 max-w-2xl mx-auto">
-      Aquí se mostrarán los productos de la categoría <strong>{categoria}</strong> cargados desde un archivo JSON.
+    <!-- TÍTULO -->
+    <h2 class="text-3xl sm:text-4xl font-bold font-alata text-center mb-4 text-[#3B4932] capitalize">
+      {categoriaActual ? categoriaActual.title : 'Categoría no encontrada'}
+    </h2>
+
+    <!-- DESCRIPCIÓN -->
+    <p class="text-center text-[#3B4932] max-w-2xl px-4 text-base sm:text-lg">
+      Descubre todos nuestros productos y lleva tus proyectos al siguiente nivel. Encuentra soluciones ideales para cada necesidad, con la calidad y variedad que buscas.
     </p>
+
+    <!-- BREADCRUMB -->
+    <div class="w-full max-w-[900px] mb-6">
+      <nav class="text-sm font-medium text-verdeRosfin">
+        <ul class="flex space-x-2">
+          <li><a href="/#productos" class="hover:underline">productos</a></li>
+          <li class="text-verdeRosfin">›</li>
+          <li><a href={`/categorias/${categoria}`} class="hover:underline capitalize">{categoria}</a></li>
+          <li class="text-verdeRosfin">›</li>
+          <li><span class="text-naranjaRosfin">artículos</span></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- PRODUCTOS -->
+    <div class="w-full h-auto flex flex-wrap items-center justify-center gap-5 mt-8 p-4">
+      {productos.map((item) => (
+        <CardProductos producto={{ ...item, imagen: iconoCategoria }} />
+      ))}
+    </div>
+
   </section>
 </Layout>
