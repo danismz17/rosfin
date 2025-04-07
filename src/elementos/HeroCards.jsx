@@ -28,7 +28,7 @@ const HeroCards = () => {
             {options.map((option, index) => (
                 <motion.li
                     key={index}
-                    className="flex flex-col items-center space-y-4 px-8 py-8 bg-slate-300"
+                    className="flex flex-col items-center space-y-4 px-8 py-8"
                     onMouseEnter={() => handleMouseEnter(index)}
                     onMouseLeave={() => handleMouseLeave(index)}
                     initial={{ opacity: 0, y: 50 }}
