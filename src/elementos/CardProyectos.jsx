@@ -39,7 +39,7 @@ const CardProyectos = () => {
                     <img 
                         src={proyecto.img} 
                         alt={proyecto.title} 
-                        style={{ height: '80px', marginBottom: '15px' }} 
+                        style={{ height: '48px', marginBottom: '15px' }} 
                     />
                     <h4>
                         {proyecto.title}
