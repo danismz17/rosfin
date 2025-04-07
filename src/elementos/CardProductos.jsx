@@ -33,6 +33,7 @@ const CardProductos = ({ producto }) => {
         alignItems: "center",
         flexDirection: "column",
         padding: "16px",
+
       }}
     >
       <span className="w-8 flex justify-center items-center">
@@ -48,31 +49,28 @@ const CardProductos = ({ producto }) => {
         <img src={ImagenArticulo || "/icons/default.png"} alt={nombre} />
       </span>
 
-      <div className="w-full flex justify-center items-center flex-col gap-x-0">
-        <h3 className="text-white p-0 m-0">
-          {precios[medidaSeleccionada] ? `$${precios[medidaSeleccionada]}` : 'Consultar'}
-        </h3>
-        <p className="text-xs pb-4 text-white">{unidadVenta}</p>
-      </div>
+
+
+      <div className="w-full flex justify-center items-centergap-x-0">
 
       <ol className="w-full flex justify-start flex-col items-start gap-y-2 mt-2">
         <li className="flex gap-x-2 justify-center items-center">
           <span className="w-6">
-            <img src={imagen} alt="" />
+            <img src='/product-icons/material.png' alt="" />
           </span>
           <p className="text-xs text-white">{tipoMaterial}</p>
         </li>
 
         <li className="flex gap-x-2 justify-center items-center">
           <span className="w-6">
-            <img src={imagen} alt="" />
+          <img src='/product-icons/uso.png' alt="" />
           </span>
           <p className="text-xs text-white">{uso}</p>
         </li>
 
         <li className="flex gap-x-2 justify-center items-center">
           <span className="w-6">
-            <img src={imagen} alt="" />
+          <img src='/product-icons/stock.png' alt="" />
           </span>
           <p className="text-xs text-white">{enStock ? "En Stock" : "Sin stock"}</p>
         </li>
@@ -80,7 +78,7 @@ const CardProductos = ({ producto }) => {
         {medidasArray?.length > 0 && (
           <li className="flex gap-x-2 justify-center items-center">
             <span className="w-6">
-              <img src={imagen} alt="" />
+            <img src='/product-icons/medidas.png' alt="" />
             </span>
             <select
               className="text-xs p-1 rounded bg-white text-black"
@@ -96,6 +94,25 @@ const CardProductos = ({ producto }) => {
           </li>
         )}
       </ol>
+
+
+
+      <div className="w-full flex justify-center items-center flex-col gap-x-0">
+        <h3 className="text-white p-0 m-0">
+          {precios[medidaSeleccionada] ? `$${precios[medidaSeleccionada]}` : 'Consultar'}
+        </h3>
+        <p className="text-xs pb-4 text-white">{unidadVenta}</p>
+      </div>
+
+
+
+
+
+
+
+      </div>
+
+
     </div>
   );
 };
