@@ -80,6 +80,34 @@ p {
 
 /* ============ MEDIA QUERIES ============ */
 
+@media screen and (min-device-width: 360px) and (max-device-width: 400px) and (-webkit-device-pixel-ratio: 3) {
+  html {
+    font-size: 87.5%; /* Reduce ligeramente el tamaño global */
+  }
+
+  h1 {
+    font-size: clamp(1.8rem, 7vw, 3.2rem) !important;
+  }
+
+  h2 {
+    font-size: clamp(1.4rem, 5vw, 2.2rem) !important;
+  }
+
+  p,
+  h3,
+  h4 {
+    font-size: 0.9rem !important;
+  }
+
+  body {
+    zoom: 0.85;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+}
+
+
+
 /* Ajuste especial para pantallas muy pequeñas */
 @media (max-width: 400px) {
   #heroDistri {
