@@ -1,22 +1,32 @@
 ---
-import Header from '../components/Header.astro';
-import Layout from '../layouts/Layout.astro';
-import Hero from '../components/Hero.astro';
-import SobreNosotros from '../components/SobreNosotros.astro';
-import Carrusel from '../components/Carrusel.astro';
-import ProyectosPersonalizados from '../components/ProyectosPersonalizados.astro';
-import NuestrosProductos from '../components/NuestrosProductos.astro';
-
-
-
-
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import SobreNosotros from "../components/SobreNosotros.astro";
+import Carrusel from "../components/Carrusel.astro";
+import ProyectosPersonalizados from "../components/ProyectosPersonalizados.astro";
+import NuestrosProductos from "../components/NuestrosProductos.astro";
 ---
 
 <Layout>
-	<Header/>
-	<Hero/>
-	<SobreNosotros/>
-	<Carrusel/>
-	<ProyectosPersonalizados/>
-	<NuestrosProductos/>
+	<Header />
+	<Hero />
+	<SobreNosotros />
+	<Carrusel />
+	<ProyectosPersonalizados />
+	<NuestrosProductos />
 </Layout>
+
+<script is:inline>
+	window.addEventListener("DOMContentLoaded", () => {
+		const hash = window.location.hash;
+		if (hash) {
+			const target = document.querySelector(hash);
+			if (target) {
+				setTimeout(() => {
+					target.scrollIntoView({ behavior: "smooth" });
+				}, 200); // Espera leve para asegurarse de que el DOM esté cargado
+			}
+		}
+	});
+</script>
