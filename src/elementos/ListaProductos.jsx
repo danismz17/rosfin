@@ -1,5 +1,5 @@
+
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
 import CardProductos from '../elementos/CardProductos';
 
 const ListaProductos = ({ productos, iconoCategoria }) => {
@@ -11,7 +11,6 @@ const ListaProductos = ({ productos, iconoCategoria }) => {
 
     return (
         <>
-            {/* BUSCADOR */}
             <form className="w-full md:w-auto flex items-center justify-end mb-6">
                 <input
                     type="text"
@@ -29,23 +28,13 @@ const ListaProductos = ({ productos, iconoCategoria }) => {
                 </button>
             </form>
 
-            {/* CONTENEDOR DE CARDS */}
-            <div className="w-full max-w-[1200px] mx-auto flex flex-wrap items-start justify-start gap-5 mt-4 p-4">
-                {productosFiltrados.map((item, index) => (
-                    <motion.div
-                        key={item.slug}
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.3, delay: index * 0.05 }}
-                    >
-                        <CardProductos producto={{ ...item, imagen: iconoCategoria }} />
-                    </motion.div>
+            <div className="w-full h-auto flex flex-wrap items-center justify-center gap-5 mt-4 p-4">
+                {productosFiltrados.map((item) => (
+                    <CardProductos key={item.slug} producto={{ ...item, imagen: iconoCategoria }} />
                 ))}
 
                 {productosFiltrados.length === 0 && (
-                    <p className="text-center text-gray-600 w-full mt-4">
-                        No se encontraron productos.
-                    </p>
+                    <p className="text-center text-gray-600 w-full mt-4">No se encontraron productos.</p>
                 )}
             </div>
         </>
