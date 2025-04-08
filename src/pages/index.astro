@@ -19,6 +19,16 @@ import GaleriaHome from "../components/GaleriaHome.astro";
 	<GaleriaHome />
 </Layout>
 
+
+<button 
+  onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+  class="fixed bottom-6 right-6 z-50 bg-verdeRosfin text-white px-4 py-2 rounded-full shadow-lg hover:bg-verdeRosfinDark transition-all duration-300"
+  aria-label="Volver arriba"
+>
+  ↑
+</button>
+
+
 <script is:inline>
 	window.addEventListener("DOMContentLoaded", () => {
 		const hash = window.location.hash;
