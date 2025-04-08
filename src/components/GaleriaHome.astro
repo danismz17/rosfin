@@ -1,16 +1,27 @@
 ---
 // Archivo: componentes/GaleriaPreview.astro
 import { images } from '../data/galeria.json';
+import AOSInitializer from "../elementos/AOSInitializer.jsx";
 ---
 
-<section id="#galeriahome" class="w-full  px-6 py-12 bg-[#DCDCDC]">
-  <h2 class="text-verdeRosfin text-center mb-6">
+<AOSInitializer client:load />
+
+<section id="galeriahome" class="w-full px-6 py-12 bg-[#DCDCDC]">
+  <h2 data-aos="fade-right" class="text-center px-10 text-verdeRosfin">
     Algunos de Nuestros Trabajos
   </h2>
 
+  <p data-aos="fade-right"  class="text-center px-5 pt-5 text-verdeRosfin">Te mostramos parte del camino recorrido junto a nuestros clientes</p>
+
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pt-10">
-    {images.slice(0, 6).map((img) => (
-      <img src={img.src} alt={img.alt} class="rounded-lg shadow-md object-cover w-full h-60 hover:scale-105 transition-transform duration-300" />
+    {images.slice(0, 6).map((img, index) => (
+      <img
+        src={img.src}
+        alt={img.alt}
+        class="rounded-lg shadow-md object-cover w-full h-60 hover:scale-105 transition-transform duration-300"
+        data-aos="fade-up"
+        data-aos-delay={index * 100} 
+      />
     ))}
   </div>
 
