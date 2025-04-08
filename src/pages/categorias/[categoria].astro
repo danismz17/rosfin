@@ -18,7 +18,7 @@ const productos = articulos[categoria as keyof typeof articulos] || [];
 ---
 
 <Layout>
-  <Header />
+  <Header categoriaActiva={true} />
 
   <section class="pt-32 pb-20 px-6 min-h-screen bg-[#DCDCDC] flex flex-col items-center seccionPattern">
 
@@ -47,6 +47,27 @@ const productos = articulos[categoria as keyof typeof articulos] || [];
 
     <!-- BUSCADOR Y PRODUCTOS (en React) -->
     <ListaProductos productos={productos} iconoCategoria={iconoCategoria} client:load />
+
+
+
+<!-- CALL TO ACTION: EXPLORAR MÁS CATEGORÍAS -->
+<div class="w-full max-w-4xl bg-[#343131] text-white rounded-xl mt-16 p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-lg">
+  <!-- Texto -->
+  <div class="text-center md:text-left">
+    <h3 class="text-2xl sm:text-3xl font-semibold mb-2">¿No encontraste lo que buscabas?</h3>
+    <p class="text-sm sm:text-base text-gray-200">
+      Explorá nuestras otras categorías y descubrí más productos para tus proyectos.
+    </p>
+  </div>
+
+  <!-- Botón -->
+  <a 
+    href="/#CategoriaProd"
+    class="inline-block bg-naranjaRosfin text-white px-6 py-3 rounded-md text-sm sm:text-base font-semibold shadow-md hover:bg-[#e56b27] transition-all duration-200"
+  >
+    Ver otras categorías
+  </a>
+</div>
 
   </section>
 </Layout>
