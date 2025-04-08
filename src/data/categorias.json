@@ -4,41 +4,41 @@
         "slug": "mecanica",
         "ico": "/icons/mecanicas.png",
         "video": "/videos/mecanica.mp4",
-        "cantidad": 12
+        "cantidad": 7
     },
     {
         "title": "Muebles",
         "slug": "muebles",
         "ico": "/icons/muebles.png",
         "video": "/videos/muebles.mp4",
-        "cantidad": 15
+        "cantidad": 5
     },
     {
         "title": "Construcción",
         "slug": "construccion",
         "ico": "/icons/construccion.png",
         "video": "/videos/construccion.mp4",
-        "cantidad": 10
+        "cantidad": 5
     },
     {
         "title": "Ferretería",
         "slug": "ferreteria",
         "ico": "/icons/ferreteria.png",
         "video": "/videos/ferreteria.mp4",
-        "cantidad": 8
+        "cantidad": 9
     },
     {
         "title": "Electricidad",
         "slug": "electricidad",
         "ico": "/icons/electricidad.png",
         "video": "/videos/electricidad.mp4",
-        "cantidad": 14
+        "cantidad": 8
     },
     {
         "title": "Trabajos a Medida",
         "slug": "trabajosamedida",
         "ico": "/icons/trabajosamedida.png",
         "video": "/videos/trabajosamedida.mp4",
-        "cantidad": 6
+        "cantidad": 1
     }
 ]
