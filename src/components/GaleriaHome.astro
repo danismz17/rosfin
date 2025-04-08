@@ -1,0 +1,22 @@
+---
+// Archivo: componentes/GaleriaPreview.astro
+import { images } from '../data/galeria.json';
+---
+
+<section id="#galeriahome" class="w-full  px-6 py-12 bg-[#DCDCDC]">
+  <h2 class="text-verdeRosfin text-center mb-6">
+    Algunos de Nuestros Trabajos
+  </h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pt-10">
+    {images.slice(0, 6).map((img) => (
+      <img src={img.src} alt={img.alt} class="rounded-lg shadow-md object-cover w-full h-60 hover:scale-105 transition-transform duration-300" />
+    ))}
+  </div>
+
+  <div class="flex justify-center mt-8">
+    <a href="/galeria" class="btn-primary">
+      Ver más trabajos
+    </a>
+  </div>
+</section>

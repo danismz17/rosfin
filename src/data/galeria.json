@@ -1,0 +1,36 @@
+{
+    "images": [
+        {
+            "src": "https://images.unsplash.com/photo-1609627016501-b862497c7294?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZXN0cnVjdHVyYSUyMGRlJTIwYWNlcm98ZW58MHx8MHx8fDA%3D",
+            "alt": "Soldadura de estructura metálica"
+        },
+        {
+            "src": "https://img.freepik.com/foto-gratis/angulo-vision-baja-edificio-scafolding_1252-1176.jpg",
+            "alt": "Estructura de acero en obra"
+        },
+        {
+            "src": "https://d1aj1t8m7tqg8v.cloudfront.net/images/upload/3041/card/664b7df212e986.43147330.jpg",
+            "alt": "Piezas metálicas ensambladas"
+        },
+        {
+            "src": "https://terrazasyparrillas.com/wp-content/uploads/2023/11/Portada-para-post-TERRAZA-Y-CONSULTORES.jpg",
+            "alt": "Maquinaria de corte industrial"
+        },
+        {
+            "src": "https://esd.com.uy/wp-content/uploads/2020/05/rejas5.jpg",
+            "alt": "Planchas de acero apiladas"
+        },
+        {
+            "src": "https://i.ytimg.com/vi/FdRENnGVNFw/maxresdefault.jpg",
+            "alt": "Trabajador soldando"
+        },
+        {
+            "src": "https://www.barracadefuegos.com.uy/wp-content/uploads/2019/11/WhatsApp-Image-2018-11-15-at-3.45.19-PM-1.jpeg",
+            "alt": "Herrería artesanal"
+        },
+        {
+            "src": "https://i.pinimg.com/736x/21/ab/71/21ab7190a33d15152a5bc136f2c7c339.jpg",
+            "alt": "Corte de metal con chispas"
+        }
+    ]
+}

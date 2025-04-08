@@ -1,0 +1,37 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import { images } from "../data/galeria.json";
+---
+
+<Layout>
+  <Header categoriaActiva={true} />
+
+  <section class="pt-32 pb-20 px-6 bg-[#DCDCDC] min-h-screen w-full flex flex-col items-center">
+    <h2 class="text-center text-verdeRosfin mb-8">Galería de Trabajos</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+      {images.map((img) => (
+        <img src={img.src} alt={img.alt} class="rounded-lg shadow-lg object-cover w-full h-60 hover:scale-105 transition-transform duration-300" />
+      ))}
+    </div>
+
+    <div class="w-full max-w-4xl bg-[#343131] text-white rounded-xl mt-16 p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-lg">
+      <!-- Texto -->
+      <div class="text-center md:text-left">
+        <h3 class="text-2xl sm:text-3xl font-semibold mb-2">Busca los productos que necesites</h3>
+        <p class="text-sm sm:text-base text-gray-200">
+          Potenciá tus proyectos con nuestra amplia gama de productos.
+        </p>
+      </div>
+    
+      <!-- Botón -->
+      <a 
+        href="/#CategoriaProd"
+        class="inline-block bg-naranjaRosfin text-white px-6 py-3 rounded-md text-sm sm:text-base font-semibold shadow-md hover:bg-[#e56b27] transition-all duration-200"
+      >
+        ir a categorías
+      </a>
+    </div>
+  </section>
+</Layout>
