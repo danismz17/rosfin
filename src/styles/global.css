@@ -43,6 +43,12 @@ h4 {
   font-weight: bold;
 }
 
+h5 {
+  font-size: clamp(1.25rem, 4vmin, 2.0rem); /* 16px - 24px aprox */
+  color: #D8D8D8;
+  font-weight: bold;
+}
+
 p {
   font-size: clamp(0.95rem, 2.5vmin, 1.125rem); /* 15px - 18px */
 }

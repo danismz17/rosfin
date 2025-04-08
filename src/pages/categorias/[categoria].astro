@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import categorias from '../../data/categorias.json';
 import articulos from '../../data/articulos.json';
-import CardProductos from '../../elementos/CardProductos';
+import ListaProductos from '../../elementos/ListaProductos.jsx';
 
 export async function getStaticPaths() {
   return categorias.map((cat) => ({
@@ -20,7 +20,7 @@ const productos = articulos[categoria as keyof typeof articulos] || [];
 <Layout>
   <Header />
 
-  <section class="pt-32 pb-20 px-6 min-h-screen bg-[#DCDCDC] flex flex-col items-center">
+  <section class="pt-32 pb-20 px-6 min-h-screen bg-[#DCDCDC] flex flex-col items-center seccionPattern">
 
     <!-- TÍTULO -->
     <h2 class="text-3xl sm:text-4xl font-bold font-alata text-center mb-4 text-[#3B4932] capitalize">
@@ -33,9 +33,9 @@ const productos = articulos[categoria as keyof typeof articulos] || [];
     </p>
 
     <!-- BREADCRUMB -->
-    <div class="w-full max-w-[900px] mb-6">
+    <div class="w-full max-w-[900px] mt-8 mb-6">
       <nav class="text-sm font-medium text-verdeRosfin">
-        <ul class="flex space-x-2">
+        <ul class="flex space-x-2 flex-wrap">
           <li><a href="/#productos" class="hover:underline">productos</a></li>
           <li class="text-verdeRosfin">›</li>
           <li><a href={`/categorias/${categoria}`} class="hover:underline capitalize">{categoria}</a></li>
@@ -45,12 +45,17 @@ const productos = articulos[categoria as keyof typeof articulos] || [];
       </nav>
     </div>
 
-    <!-- PRODUCTOS -->
-    <div class="w-full h-auto flex flex-wrap items-center justify-center gap-5 mt-8 p-4">
-      {productos.map((item) => (
-        <CardProductos producto={{ ...item, imagen: iconoCategoria }} />
-      ))}
-    </div>
+    <!-- BUSCADOR Y PRODUCTOS (en React) -->
+    <ListaProductos productos={productos} iconoCategoria={iconoCategoria} client:load />
 
   </section>
 </Layout>
+
+<style>
+  .seccionPattern {
+    background-image: url('/img/pattern.svg');
+    background-repeat: repeat;
+    background-size: 100px;
+    background-position: center;
+  }
+</style>
