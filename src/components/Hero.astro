@@ -2,6 +2,8 @@
 import HeroCards from "../elementos/HeroCards.jsx";
 type Props = {};
 const {} = Astro.props;
+
+import BotonesPopups from "../elementos/BotonesPopups.jsx";
 ---
 
 <div class="hero-container section-Container flex justify-center items-center flex-col">
@@ -22,7 +24,8 @@ const {} = Astro.props;
                     class="text-naranjaRosfin">soluciones de hierro.</span
                 >
             </h3>
-            <button class="btn-primary !ml-0">Cotiza tu proyecto</button>
+            <BotonesPopups mostrarPresupuesto={false} client:load />
+
         </div>
 
         <div
