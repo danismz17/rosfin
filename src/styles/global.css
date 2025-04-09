@@ -79,9 +79,11 @@ p {
 /* ============ BOTONES ============ */
 
 .btn-primary {
-  @apply my-10 ml-[2%] bg-negroRosfin text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-opacity-90 transition ease-in-out duration-300 flex justify-center items-center;
+  @apply bg-negroRosfin text-white font-bold rounded-lg shadow-lg hover:bg-opacity-90 transition ease-in-out duration-300 flex justify-center  items-center text-base sm:text-lg md:text-xl px-5 py-2 w-full max-w-xs sm:max-w-sm md:max-w-md mx-auto;
   letter-spacing: 1px;
 }
+
+
 
 .btn-primary img {
   height: 24px;
@@ -90,31 +92,11 @@ p {
 
 /* ============ MEDIA QUERIES ============ */
 
-@media screen and (min-device-width: 360px) and (max-device-width: 400px) and (-webkit-device-pixel-ratio: 3) {
-  html {
-    font-size: 87.5%; /* Reduce ligeramente el tamaño global */
-  }
-
-  h1 {
-    font-size: clamp(1.8rem, 7vw, 3.2rem) !important;
-  }
-
-  h2 {
-    font-size: clamp(1.4rem, 5vw, 2.2rem) !important;
-  }
-
-  p,
-  h3,
-  h4 {
-    font-size: 0.9rem !important;
-  }
-
-}
 
 
 
 /* Ajuste especial para pantallas muy pequeñas */
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   #heroDistri {
     flex-direction: column;
     text-align: center;
@@ -142,37 +124,22 @@ p {
   #heroDistri button {
     margin-left: auto;
   }
+
+  
+
 }
 
 /* iPad (768x1024) */
 @media (min-width: 768px) and (max-width: 1023px) {
-  h1 {
-    font-size: 4rem;
-  }
 
-  h3 {
-    font-size: 1.75rem;
-  }
 }
 
 /* Macbook Pro / PC MID (1440x900 y 1440x1024) */
 @media (min-width: 1440px) and (max-width: 1535px) {
-  h1 {
-    font-size: 6rem;
-  }
 
-  h3 {
-    font-size: 2.25rem;
-  }
 }
 
 /* PC LG (1920x1080) */
 @media (min-width: 1920px) {
-  h1 {
-    font-size: 8rem;
-  }
 
-  h3 {
-    font-size: 2.75rem;
-  }
 }

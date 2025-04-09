@@ -16,7 +16,7 @@ const BotonesPopups = ({
 
   return (
     <>
-      <div className={`flex flex-row justify-center gap-8 ${className}`}>
+      <div className={`flex h-[48px] gap-x-20 flex-row justify-center gap-8 ${className}`}>
         {mostrarContacto && (
           <button className="btn-primary" onClick={() => setOpenContacto(true)}>
             <span>
