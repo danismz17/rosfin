@@ -86,7 +86,7 @@ p {
 /* Ajuste especial para pantallas muy pequeñas */
 
   
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #heroDistri {
     flex-direction: column;
     text-align: center;
@@ -111,5 +111,5 @@ p {
   #heroDistri h3 {
     margin: 0 auto;
   }
-
 }
+
