@@ -18,8 +18,22 @@ import BotonesPopups from "../elementos/BotonesPopups.jsx";
     <CardProyectos />
   </div>
 
-  <div class="w-full flex items-center justify-center py-10">
-    <BotonesPopups client:load />
+  <div class="w-full flex items-center justify-center py-10 gap-x-8">
+    <BotonesPopups
+    texto="Contactar"
+    color="bg-negroRosfin"
+    icono={"/icons/phone.svg"as any} 
+    funcion="modalContacto"
+    client:load
+  />
+
+    <BotonesPopups
+      texto="Presupuesto"
+      color="bg-negroRosfin"
+      icono={"/icons/calcu.svg"as any}
+      funcion="modalPresupuesto"
+      client:load
+    />
 
   </div>
 </section>

@@ -16,15 +16,21 @@ import BotonesPopups from "../elementos/BotonesPopups.jsx";
                 <h3 class="text-[14px] text-negroRosfin font-bold tracking-[.50em] py-1">Rosfin</h3>
             </span>
 
-            <h3 class="text-blancoRosfin  text-center md:text-left max-w-full my-0 pt-5">
+            <h3 class="text-blancoRosfin  text-center md:text-left max-w-full my-0 pt-6">
                 Desde <span class="text-naranjaRosfin">1957</span> creando <span class="text-naranjaRosfin">soluciones de hierro.</span>
             </h3>
-            <div class="w-full  h-20 flex justify-center sm:justify-start items-center">
-                <BotonesPopups mostrarPresupuesto={false} client:load />
+            <div class="w-full pt-12 pb-12 flex justify-center md:justify-start items-center">
+                <BotonesPopups
+                texto="Cotiza tu proyecto"
+                color="bg-negroRosfin"
+                icono={"/icons/calcu.svg" as any}
+                funcion="modalPresupuesto"
+                client:load
+            />
             </div>
         </div>
 
-        <div class="w-full md:w-1/2 h-full relative overflow-hidden flex justify-center items-center mb-4 md:mb-0">
+        <div class="logoBanner w-full md:w-1/2 h-full relative overflow-hidden flex justify-center items-center mb-4 md:mb-0">
             <img
                 class="logo-hero md:translate-x-2/4"
                 src="/img/logo.svg"
@@ -40,9 +46,6 @@ import BotonesPopups from "../elementos/BotonesPopups.jsx";
 
 <style>
     .hero-container {
-        /* width: 100%;
-        height: auto;
-        min-height: 100vh; */
         background-color: #4b5945;
         background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
     }

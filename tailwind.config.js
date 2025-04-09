@@ -9,9 +9,7 @@ export default {
         naranjaRosfin: '#FF7F3E',
         negroRosfin: '#343131',
       },
-      maxWidth: {
-        'screen': '100vw',
-      },
+
       fontFamily: {
         alata: ['Alata', 'sans-serif'], 
         vina: ['Vina Sans', 'cursive'], 

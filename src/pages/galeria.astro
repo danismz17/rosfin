@@ -4,6 +4,7 @@ import Header from "../components/Header.astro";
 import { images } from "../data/galeria.json";
 import AOSInitializer from "../elementos/AOSInitializer.jsx";
 import ProyectosPersonalizados from "../components/ProyectosPersonalizados.astro";
+import BotonesPopups from "../elementos/BotonesPopups.jsx";
 ---
 
 <Layout>
@@ -38,12 +39,13 @@ import ProyectosPersonalizados from "../components/ProyectosPersonalizados.astro
       </div>
     
       <!-- Botón -->
-      <button
-      onclick="localStorage.setItem('scrollToCategoria', 'true'); window.location.href = '/'"
-      class="inline-block bg-naranjaRosfin text-white px-6 py-3 rounded-md text-sm sm:text-base font-semibold shadow-md hover:bg-[#e56b27] transition-all duration-200"
-    >
-      Ir a categorías
-    </button>
+      <BotonesPopups
+      texto="Ir a categorías"
+      color="bg-naranjaRosfin"
+      icono={"" as any}
+      funcion="iraHome"
+      client:load
+  />
     
     
     

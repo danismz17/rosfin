@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import categorias from '../data/categorias.json';
+import BotonesPopups from "../elementos/BotonesPopups.jsx";
 
 const CardCategorias = ({ title, ico, video, cantidad, slug }) => {
   const videoRef = useRef(null);
@@ -86,7 +87,19 @@ const CardCategorias = ({ title, ico, video, cantidad, slug }) => {
           {title}
         </h3>
         <p className="p-cards text-blancoRosfin">{cantidad} elementos</p>
-        <button className="btn-primary">Ver Artículos</button>
+
+        <div className="flex gap-2 mt-8">
+          <BotonesPopups
+            texto="Ver Productos"
+            color="bg-negroRosfin"
+            icono=""
+            funcion=""
+            client:load
+          />
+
+        </div>
+
+
       </div>
     </a>
   );

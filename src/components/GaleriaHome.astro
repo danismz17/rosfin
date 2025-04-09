@@ -2,6 +2,7 @@
 // Archivo: componentes/GaleriaPreview.astro
 import { images } from '../data/galeria.json';
 import AOSInitializer from "../elementos/AOSInitializer.jsx";
+import BotonesPopups from "../elementos/BotonesPopups.jsx";
 ---
 
 <AOSInitializer client:load />
@@ -26,8 +27,12 @@ import AOSInitializer from "../elementos/AOSInitializer.jsx";
   </div>
 
   <div class="flex justify-center mt-8">
-    <a href="/galeria" class="btn-primary">
-      Ver más trabajos
-    </a>
+    <BotonesPopups
+    texto="Ver más"
+    color="bg-negroRosfin"
+    icono={"" as any}
+    funcion="iraGaleria"
+    client:load
+/>
   </div>
 </section>

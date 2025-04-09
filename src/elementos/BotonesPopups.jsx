@@ -3,38 +3,58 @@ import PopupContacto from './PopupContacto';
 import PopupPresupuesto from './PopUpPresupuesto';
 
 const BotonesPopups = ({
-  mostrarContacto = true,
-  mostrarPresupuesto = true,
-  contactoLabel = "Contactar",
-  contactoIcon = "/icons/phone.svg",
-  presupuestoLabel = "Presupuesto",
-  presupuestoIcon = "/icons/calcu.svg",
+  texto = "Botón",
+  color = "bg-negroRosfin",
+  icono = null, 
+  funcion = "", // modalContacto | modalPresupuesto | irAHome
   className = ""
 }) => {
   const [openContacto, setOpenContacto] = useState(false);
   const [openPresupuesto, setOpenPresupuesto] = useState(false);
 
+  const handleClick = () => {
+    switch (funcion) {
+      case "modalContacto":
+        setOpenContacto(true);
+        break;
+  
+      case "modalPresupuesto":
+        setOpenPresupuesto(true);
+        break;
+  
+      case "iraHome":
+        localStorage.setItem('scrollToCategoria', 'true');
+        window.location.href = "/";
+        break;
+  
+      case "iraGaleria":
+        localStorage.setItem('scrollToCategoria', 'true');
+        window.location.href = "/galeria";
+        break;
+  
+      default:
+        break;
+    }
+  };
+
+  const hoverColor = color === "bg-negroRosfin"
+  ? "hover:bg-gray-950"
+  : color === "bg-naranjaRosfin"
+  ? "hover:bg-orange-400"
+  : "hover:opacity-80"; // fallback si el color es otro
+  
+
   return (
     <>
-      <div className={`flex h-[48px] gap-x-20 flex-row justify-center gap-8 ${className}`}>
-        {mostrarContacto && (
-          <button className="btn-primary" onClick={() => setOpenContacto(true)}>
-            <span>
-              <img src={contactoIcon} alt="Ícono de contacto" className="icon" />
-            </span>
-            {contactoLabel}
-          </button>
+      <button
+        className={`btn-primary ${color} text-blancoRosfin ${hoverColor} flex items-center gap-2 px-8 py-4 rounded-md ${className}`}
+        onClick={handleClick}
+      >
+        {icono && (
+          <img src={icono} alt="ícono" className="w-5 h-5" />
         )}
-
-        {mostrarPresupuesto && (
-          <button className="btn-primary" onClick={() => setOpenPresupuesto(true)}>
-            <span>
-              <img src={presupuestoIcon} alt="Ícono de presupuesto" className="icon" />
-            </span>
-            {presupuestoLabel}
-          </button>
-        )}
-      </div>
+        {texto}
+      </button>
 
       <PopupContacto isOpen={openContacto} onClose={() => setOpenContacto(false)} />
       <PopupPresupuesto isOpen={openPresupuesto} onClose={() => setOpenPresupuesto(false)} />
