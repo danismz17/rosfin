@@ -44,7 +44,7 @@ const CardProyectos = () => {
                     <h4>
                         {proyecto.title}
                     </h4>
-                    <p className='p-cards text-blancoRosfin'>
+                    <p className="p-cards text-left sm:text-center text-blancoRosfin">
                         {proyecto.description}
                     </p>
                 </li>
