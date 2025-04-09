@@ -36,7 +36,15 @@ const productos = articulos[categoria as keyof typeof articulos] || [];
     <div class="w-full max-w-[900px] mt-8 mb-6">
       <nav class="text-sm font-medium text-verdeRosfin">
         <ul class="flex space-x-2 flex-wrap">
-          <li><a href="/#CategoriaProd" class="hover:underline">productos</a></li>
+          <li>
+            <a 
+              href="/" 
+              class="hover:underline"
+              onclick="localStorage.setItem('scrollToCategoria', 'true')"
+            >
+              productos
+            </a>
+          </li>
           <li class="text-verdeRosfin">›</li>
           <li><a href={`/categorias/${categoria}`} class="hover:underline capitalize">{categoria}</a></li>
           <li class="text-verdeRosfin">›</li>
@@ -62,11 +70,13 @@ const productos = articulos[categoria as keyof typeof articulos] || [];
 
   <!-- Botón -->
   <a 
-    href="/#CategoriaProd"
-    class="inline-block bg-naranjaRosfin text-white px-6 py-3 rounded-md text-sm sm:text-base font-semibold shadow-md hover:bg-[#e56b27] transition-all duration-200"
-  >
-    Ver otras categorías
-  </a>
+  href="/"
+  onclick="localStorage.setItem('scrollToCategoria', 'true')"
+  class="inline-block bg-naranjaRosfin text-white px-6 py-3 rounded-md text-sm sm:text-base font-semibold shadow-md hover:bg-[#e56b27] transition-all duration-200"
+>
+  Ver otras categorías
+</a>
+
 </div>
 
   </section>

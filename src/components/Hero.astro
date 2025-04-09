@@ -11,24 +11,20 @@ import BotonesPopups from "../elementos/BotonesPopups.jsx";
         <div class="w-full md:w-1/2 h-full flex flex-col justify-center items-center md:items-start pt-8 md:pt-[5%] gap-y-0 px-4 md:pl-20">
             <h1 class="text-blancoRosfin text-[42px] sm:text-[64px] md:text-[100px] lg:text-[140px] xl:text-[180px] 2xl:text-[200px] text-center md:text-left my-0 relative">
                 metalmind
-              </h1>
-              <span class="w-[90%] bg-blancoRosfin flex justify-center items-center rounded-[20px]">
+            </h1>
+            <span class="w-[90%] bg-blancoRosfin flex justify-center items-center rounded-[20px]">
                 <h3 class="text-[14px] text-negroRosfin font-bold tracking-[.50em] py-1">Rosfin</h3>
-              </span>
-              
+            </span>
+
             <h3 class="text-blancoRosfin  text-center md:text-left max-w-full my-0 pt-5">
                 Desde <span class="text-naranjaRosfin">1957</span> creando <span class="text-naranjaRosfin">soluciones de hierro.</span>
             </h3>
             <div class="w-full  h-20 flex justify-center sm:justify-start items-center">
                 <BotonesPopups mostrarPresupuesto={false} client:load />
-              </div>
-              
-
+            </div>
         </div>
 
-        <div
-            class="w-full md:w-1/2 h-full relative overflow-hidden flex justify-center items-center mb-4 md:mb-0"
-        >
+        <div class="w-full md:w-1/2 h-full relative overflow-hidden flex justify-center items-center mb-4 md:mb-0">
             <img
                 class="logo-hero md:translate-x-2/4"
                 src="/img/logo.svg"
@@ -37,9 +33,7 @@ import BotonesPopups from "../elementos/BotonesPopups.jsx";
         </div>
     </section>
 
-    <div
-        class="w-full relative bottom-4 h-auto flex justify-center items-center gap-8 text-blancoRosfin flex-wrap"
-    >
+    <div class="w-full relative bottom-4 h-auto flex justify-center items-center gap-8 text-blancoRosfin flex-wrap">
         <HeroCards client:visible />
     </div>
 </div>
