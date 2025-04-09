@@ -47,7 +47,7 @@ const BotonesPopups = ({
   return (
     <>
       <button
-        className={`btn-primary ${color} text-blancoRosfin ${hoverColor} flex items-center gap-2 px-8 py-4 rounded-md ${className}`}
+        className={`btn-primary ${color} text-blancoRosfin ${hoverColor} min-w-[180px] flex items-center justify-center gap-2 px-6 py-4 rounded-md ${className}`}
         onClick={handleClick}
       >
         {icono && (
