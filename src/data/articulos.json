@@ -624,7 +624,7 @@
                 "15/16",
                 "1"
             ],
-            "ImagenArticulo": "/icons/mecanicas.png",
+            "ImagenArticulo": "/img/productos/mecanica/mecanica-tapa-de-cilindro.png",
             "tipoMaterial": "Hierro Galvanizado",
             "uso": "Motores y ajustes",
             "enStock": true,
@@ -764,7 +764,7 @@
     ],
     "electricidad": [
         {
-            "nombre": "grampas para caño",
+            "nombre": "Grampas para caño",
             "slug": "grampas-para-caño",
             "descripcion": "Grampas para sujeción de caños eléctricos.",
             "precioPorMedida": {
@@ -785,7 +785,7 @@
                 "1 1/2",
                 "2"
             ],
-            "ImagenArticulo": "/icons/electricidad.png",
+            "ImagenArticulo": "/img/productos/electricidad/electricidad-grampasparacaño.png",
             "tipoMaterial": "Hierro galvanizado",
             "uso": "Instalaciones electricas",
             "enStock": true,
@@ -811,7 +811,7 @@
                 "1 1/2",
                 "2"
             ],
-            "ImagenArticulo": "/icons/electricidad.png",
+            "ImagenArticulo": "/img/productos/electricidad/electricidad-grampasdecepo.png",
             "tipoMaterial": "hierro Galvanizado",
             "uso": "Instalaciones electricas",
             "enStock": true,
@@ -823,7 +823,7 @@
             "descripcion": "Caja galvanizada para centro de conexión eléctrica.",
             "precioPorMedida": {},
             "medidasDisponibles": [],
-            "ImagenArticulo": "/icons/electricidad.png",
+            "ImagenArticulo": "/img/productos/electricidad/electricidad-cajadecentrogalv.png",
             "tipoMaterial": "Hierro Galvanizado",
             "uso": "instalaciones electricas",
             "enStock": true,
@@ -835,7 +835,7 @@
             "descripcion": "Caja galvanizada para ramificaciones.",
             "precioPorMedida": {},
             "medidasDisponibles": [],
-            "ImagenArticulo": "/icons/electricidad.png",
+            "ImagenArticulo": "/img/productos/electricidad/electricidad-cajadebrazogalv.png",
             "tipoMaterial": "hierro galvanizado",
             "uso": "Instalaciones electricas",
             "enStock": true,
@@ -871,7 +871,7 @@
             "descripcion": "Diseño y construcción de tableros eléctricos.",
             "precioPorMedida": {},
             "medidasDisponibles": [],
-            "ImagenArticulo": "/icons/electricidad.png",
+            "ImagenArticulo": "/img/productos/electricidad/electricidad-fabricaciondetableros.png",
             "tipoMaterial": "Adaptado a las necesidades del cliente",
             "uso": "Instalaciones electricas",
             "enStock": true,
@@ -883,7 +883,7 @@
             "descripcion": "Componentes varios para tableros eléctricos.",
             "precioPorMedida": {},
             "medidasDisponibles": [],
-            "ImagenArticulo": "/icons/electricidad.png",
+            "ImagenArticulo": "/img/productos/electricidad/electricidad-accesoriosparatableros.png",
             "tipoMaterial": "Hierro",
             "uso": "instalaciones electricas",
             "enStock": true,
@@ -941,7 +941,7 @@
                 "1 3/4 x83 x 2",
                 "2 x 83 x 2"
             ],
-            "ImagenArticulo": "/icons/ferreteria.png",
+            "ImagenArticulo": "/img/productos/ferreteria/ferreteria-arandelasplanashierro.png",
             "tipoMaterial": "Hierro",
             "uso": "uso general",
             "enStock": true,
@@ -997,7 +997,7 @@
                 "1 3/4 x83 x 2",
                 "2 x 83 x 2"
             ],
-            "ImagenArticulo": "/icons/ferreteria.png",
+            "ImagenArticulo": "/img/productos/ferreteria/ferreteria-arandelasreforzadas.png",
             "tipoMaterial": "Hierro",
             "uso": "uso general",
             "enStock": true,
@@ -1025,7 +1025,7 @@
                 "1/2 x 45 x 2",
                 "9/16 x 45 x 2"
             ],
-            "ImagenArticulo": "/icons/ferreteria.png",
+            "ImagenArticulo": "/img/productos/ferreteria/ferreteria-arandelaschapista.png",
             "tipoMaterial": "Hierro",
             "uso": "uso general",
             "enStock": true,
@@ -1055,7 +1055,7 @@
                 "5/8 x 61",
                 "3/4 x 61"
             ],
-            "ImagenArticulo": "/icons/ferreteria.png",
+            "ImagenArticulo": "/img/productos/ferreteria/ferreteria-arandelascarrocero.png",
             "tipoMaterial": "hierro",
             "uso": "uso general",
             "enStock": true,
@@ -1139,7 +1139,7 @@
                 "7/8x28",
                 "1 x32"
             ],
-            "ImagenArticulo": "/icons/ferreteria.png",
+            "ImagenArticulo": "/img/productos/ferreteria/ferreteria-",
             "tipoMaterial": "cobre",
             "uso": "uso general",
             "enStock": true,
@@ -1223,7 +1223,7 @@
                 "7/8x28",
                 "1 x32"
             ],
-            "ImagenArticulo": "/icons/ferreteria.png",
+            "ImagenArticulo": "/img/productos/ferreteria/ferreteria-",
             "tipoMaterial": "Aluminio",
             "uso": "uso general",
             "enStock": true,
@@ -1245,7 +1245,7 @@
                 "20mm",
                 "30mm"
             ],
-            "ImagenArticulo": "/icons/ferreteria.png",
+            "ImagenArticulo": "/img/productos/ferreteria/ferreteria-",
             "tipoMaterial": "acero",
             "uso": "uso general",
             "enStock": true,
@@ -1275,7 +1275,7 @@
                 "7/16",
                 "1/2"
             ],
-            "ImagenArticulo": "/icons/ferreteria.png",
+            "ImagenArticulo": "/img/productos/ferreteria/ferreteria-mariposahierrogalvanizado.png",
             "tipoMaterial": "hierro galvanizado",
             "uso": "uso general",
             "enStock": true,
@@ -1287,7 +1287,7 @@
             "descripcion": "Arandelas personalizadas bajo especificación.",
             "precioPorMedida": {},
             "medidasDisponibles": [],
-            "ImagenArticulo": "/icons/ferreteria.png",
+            "ImagenArticulo": "/img/productos/ferreteria/ferreteria-arandelasespecialesamedida.png",
             "tipoMaterial": "nos adaptamos a las necesidades del cliente",
             "uso": "uso general",
             "enStock": true,
@@ -1296,61 +1296,49 @@
     ],
     "muebles": [
         {
-            "nombre": "escritorios",
+            "nombre": "Escritorios",
             "slug": "escritorios",
             "descripcion": "Escritorios metálicos personalizados.",
             "precioPorMedida": {},
             "medidasDisponibles": [],
-            "ImagenArticulo": "/icons/muebles.png",
+            "ImagenArticulo": "/img/productos/muebles/muebles-escritorios.png",
             "tipoMaterial": "Hierro / Madera",
             "uso": "uso general",
             "enStock": true,
             "unidadVenta": "por unidad"
         },
         {
-            "nombre": "estanterias",
+            "nombre": "Estanterias",
             "slug": "estanterias",
             "descripcion": "Estanterías resistentes para almacenamiento.",
             "precioPorMedida": {},
             "medidasDisponibles": [],
-            "ImagenArticulo": "/icons/muebles.png",
+            "ImagenArticulo": "/img/productos/muebles/muebles-estanterias.png",
             "tipoMaterial": "Hierro / Madera",
             "uso": "uso general",
             "enStock": true,
             "unidadVenta": "por unidad"
         },
         {
-            "nombre": "trabajos a medida",
+            "nombre": "Trabajos a medida",
             "slug": "trabajos-a-medida",
             "descripcion": "Muebles fabricados según diseño del cliente.",
             "precioPorMedida": {},
             "medidasDisponibles": [],
-            "ImagenArticulo": "/icons/muebles.png",
+            "ImagenArticulo": "/img/productos/muebles/muebles-trabajosamedida.png",
             "tipoMaterial": "Nos adaptamos a las necesidades del cliente",
             "uso": "uso general",
             "enStock": true,
             "unidadVenta": "por unidad"
         },
         {
-            "nombre": "mesas de reuniones",
+            "nombre": "Mesas de reuniones",
             "slug": "mesas-de-reuniones",
             "descripcion": "Mesas de reuniones robustas y elegantes con canalización para cables.",
             "precioPorMedida": {},
             "medidasDisponibles": [],
-            "ImagenArticulo": "/icons/muebles.png",
+            "ImagenArticulo": "/img/productos/muebles/muebles-mesadereuniones.png",
             "tipoMaterial": "hierro / madera",
-            "uso": "uso general",
-            "enStock": true,
-            "unidadVenta": "por unidad"
-        },
-        {
-            "nombre": "luminarias",
-            "slug": "luminarias",
-            "descripcion": "Luminarias metálicas decorativas.",
-            "precioPorMedida": {},
-            "medidasDisponibles": [],
-            "ImagenArticulo": "/icons/muebles.png",
-            "tipoMaterial": "hierro",
             "uso": "uso general",
             "enStock": true,
             "unidadVenta": "por unidad"
@@ -1358,7 +1346,7 @@
     ],
     "construccion": [
         {
-            "nombre": "estructuras para techos livianos",
+            "nombre": "Estructuras para techos livianos",
             "slug": "estructuras-para-techos-livianos",
             "descripcion": "Estructuras metálicas livianas para techos.",
             "precioPorMedida": {
@@ -1367,14 +1355,14 @@
             "medidasDisponibles": [
                 "consultar sobre medida"
             ],
-            "ImagenArticulo": "/icons/construccion.png",
+            "ImagenArticulo": "/img/productos/construccion/construccion-estructurasparatechoslivianos.png",
             "tipoMaterial": "Hierro",
             "uso": "uso general",
             "enStock": true,
             "unidadVenta": "por unidad"
         },
         {
-            "nombre": "estructuras para mesada",
+            "nombre": "Estructuras para mesada",
             "slug": "estructuras-para-mesada",
             "descripcion": "Base estructural para mesadas de cocina.",
             "precioPorMedida": {
@@ -1383,14 +1371,14 @@
             "medidasDisponibles": [
                 "consultar sobre medida"
             ],
-            "ImagenArticulo": "/icons/construccion.png",
+            "ImagenArticulo": "/img/productos/construccion/construccion-estructurasparamesada.png",
             "tipoMaterial": "Hierro",
             "uso": "uso general",
             "enStock": true,
             "unidadVenta": "por unidad"
         },
         {
-            "nombre": "babetas para techos",
+            "nombre": "Babetas para techos",
             "slug": "babetas-para-techos",
             "descripcion": "Babetas metálicas para evitar filtraciones.",
             "precioPorMedida": {
@@ -1399,14 +1387,14 @@
             "medidasDisponibles": [
                 "consultar sobre medida"
             ],
-            "ImagenArticulo": "/icons/construccion.png",
+            "ImagenArticulo": "/img/productos/construccion/construccion-babetasparatechos.png",
             "tipoMaterial": "acero",
             "uso": "uso general",
             "enStock": true,
             "unidadVenta": "por unidad"
         },
         {
-            "nombre": "corte y plegados de chapa",
+            "nombre": "Corte y plegados de chapa",
             "slug": "corte-y-plegados-de-chapa",
             "descripcion": "Servicio de corte y plegado de chapas.",
             "precioPorMedida": {
@@ -1415,14 +1403,28 @@
             "medidasDisponibles": [
                 "consultar sobre medida"
             ],
-            "ImagenArticulo": "/icons/construccion.png",
+            "ImagenArticulo": "/img/productos/construccion/construccion-corteyplegadodechapa.png",
             "tipoMaterial": "hierro/hierro galvanizado",
             "uso": "uso general",
             "enStock": true,
             "unidadVenta": "por unidad"
         },
+
         {
-            "nombre": "bases para anclajes",
+            "nombre": "Luminarias",
+            "slug": "luminarias",
+            "descripcion": "Luminarias metálicas decorativas.",
+            "precioPorMedida": {},
+            "medidasDisponibles": [],
+            "ImagenArticulo": "/img/productos/construccion/construccion-luminarias.png",
+            "tipoMaterial": "hierro",
+            "uso": "uso general",
+            "enStock": true,
+            "unidadVenta": "por unidad"
+        },
+
+        {
+            "nombre": "Bases para anclajes",
             "slug": "bases-para-anclajes",
             "descripcion": "Bases metálicas para fijación estructural.",
             "precioPorMedida": {
@@ -1431,7 +1433,7 @@
             "medidasDisponibles": [
                 "consultar sobre medida"
             ],
-            "ImagenArticulo": "/icons/construccion.png",
+            "ImagenArticulo": "/img/productos/construccion/construccion-basesparaanclajes.png",
             "tipoMaterial": "acero",
             "uso": "uso general",
             "enStock": true,
@@ -1440,7 +1442,7 @@
     ],
     "trabajosamedida": [
         {
-            "nombre": "fabricaciones especiales",
+            "nombre": "Fabricaciones especiales",
             "slug": "fabricaciones-especiales",
             "descripcion": "Productos diseñados completamente a medida.",
             "precioPorMedida": {
@@ -1449,7 +1451,7 @@
             "medidasDisponibles": [
                 "consultar sobre medida"
             ],
-            "ImagenArticulo": "/icons/construccion.png",
+            "ImagenArticulo": "/img/productos/muebles/muebles-trabajosamedida.png",
             "tipoMaterial": "Hierro/Aluminio/Cobre/Bronce/acero",
             "uso": "uso general",
             "enStock": true,

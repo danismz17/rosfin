@@ -11,14 +11,14 @@
         "slug": "muebles",
         "ico": "/icons/muebles.png",
         "video": "/videos/muebles.mp4",
-        "cantidad": 5
+        "cantidad": 4
     },
     {
         "title": "Construcción",
         "slug": "construccion",
         "ico": "/icons/construccion.png",
         "video": "/videos/construccion.mp4",
-        "cantidad": 5
+        "cantidad": 6
     },
     {
         "title": "Ferretería",
