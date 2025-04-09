@@ -18,7 +18,7 @@ const CardProyectos = () => {
     return (
         <div className="flex flex-wrap justify-center gap-4">
             {proyectos.map((proyecto, index) => (
-                <li 
+                <div 
                     key={index}
                     data-aos="zoom-in" // Efecto de entrada desde el centro
                     data-aos-delay={index * 200} // Retraso basado en el índice
@@ -44,10 +44,11 @@ const CardProyectos = () => {
                     <h4>
                         {proyecto.title}
                     </h4>
-                    <p className="p-cards text-left sm:text-center text-blancoRosfin">
+                    <p className="p-cards text-center sm:text-left text-blancoRosfin">
+
                         {proyecto.description}
                     </p>
-                </li>
+                </div>
             ))}
         </div>
     );

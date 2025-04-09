@@ -42,8 +42,8 @@ const NuestrosValores = () => {
                     alignItems: 'center',
                     textAlign: 'center'
                 }}>
-                    <h4 style={{color: '#FF7F3E',}}>{item.title}</h4>
-                    <p className='p-cards'>{item.description}</p>
+                    <h4 className='text-naranjaRosfin font-bold text-lg mb-1'>{item.title}</h4>
+                    <p className='text-sm text-start'>{item.description}</p>
                 </li>
             ))}
         </ol>
