@@ -21,19 +21,20 @@ const NuestrosValores = () => {
             display: 'flex',
             flexWrap: 'wrap',
             justifyContent: 'center',
-            gap: '24px'
+
         }}>
             {data.map((item, index) => (
                 <li key={index} style={{
-                    maxWidth: '400px',
+                    maxWidth: '268px',
                     height: '225px',
                     backgroundColor: '#4B5945',
                     borderRadius: '20px',
                     color: '#D8D8D8',
-                    paddingTop: '16px',
-                    paddingBottom: '16px',
+                    paddingTop: '8px',
+                    paddingBottom: '8px',
                     paddingInline: '16px',
                     margin: '24px',
+                    marginBottom: '40px',
                     boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)',
                     display: 'flex',
                     flexDirection: 'column',

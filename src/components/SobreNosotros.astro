@@ -7,14 +7,14 @@ import AOSInitializer from "../elementos/AOSInitializer";
 
 <AOSInitializer client:load />
 
-<section id="Sobrenosotros" class="SobreNosotros-container bg-blancoRosfin flex flex-col justify-center min-h-screen pb-20">
-  <div class="w-full flex flex-col lg:flex-row flex-1">
-    <!-- Bloque de texto (aparece primero en mobile) -->
-    <div class="flex-1 order-1 lg:order-1 pt-10 px-5 flex flex-col items-center justify-center">
-      <h2 data-aos="fade-right" class="text-start px-10 text-verdeRosfin">
+<section id="Sobrenosotros" class="bg-blancoRosfin overflow-x-hidden">
+  <div class="w-full max-w-screen-xl mx-auto flex flex-col lg:flex-row pt-10 px-4 sm:px-10">
+    <!-- Bloque de texto -->
+    <div class="flex-1 order-1 lg:order-1 flex flex-col items-center justify-center">
+      <h2 data-aos="fade-right" class="text-start text-verdeRosfin w-full">
         Nuestra Historia de Excelencia
       </h2>
-      <p class="text-start px-10 pt-5 text-verdeRosfin">
+      <p class="text-start pt-5 text-verdeRosfin w-full">
         Con más de 60 años de experiencia en la industria metalúrgica, nos hemos
         consolidado como líderes en la fabricación de productos metálicos de alta
         calidad. Nuestra dedicación a la excelencia y la innovación nos ha permitido
@@ -25,8 +25,8 @@ import AOSInitializer from "../elementos/AOSInitializer";
       </p>
     </div>
 
-    <!-- Bloque de tarjetas (aparece después en mobile) -->
-    <div class="flex-1 order-2 lg:order-2 pt-10 px-5 flex flex-col items-center">
+    <!-- Bloque de tarjetas -->
+    <div class="flex-1 order-2 lg:order-2 flex flex-col items-center mt-10 lg:mt-0">
       <div class="w-full flex justify-center items-center">
         <SobreNosotrosCards />
       </div>
@@ -34,24 +34,15 @@ import AOSInitializer from "../elementos/AOSInitializer";
   </div>
 
   <!-- Valores -->
-  <div class="w-full flex-1 text-white flex justify-center mt-20">
-    <div class="w-full flex-1 text-white flex flex-col items-center">
-      <h2 data-aos="fade-left" class="text-start text-verdeRosfin">Nuestros Valores</h2>
-      <div class="w-full h-full flex flex-row justify-center items-center">
-        <NuestrosValores />
-      </div>
+  <div class="w-full max-w-screen-xl mx-auto mt-20 px-4 sm:px-10">
+    <h2 data-aos="fade-left" class="text-start text-verdeRosfin mb-6">Nuestros Valores</h2>
+    <div class="w-full h-full flex flex-col md:flex-row justify-center items-center gap-4">
+      <NuestrosValores />
     </div>
   </div>
 
   <style>
-    .SobreNosotros-container {
-      width: 100%;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .SobreNosotros-container p {
+    section#Sobrenosotros p {
       font-size: clamp(16px, 2.5vw, 24px);
     }
   </style>
