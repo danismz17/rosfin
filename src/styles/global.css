@@ -7,12 +7,13 @@
 /* ============ TIPOGRAFÍA ============ */
 
 body {
-  max-width: 100vmin;
+  max-width: 100vw;
   overflow-x: hidden;
   font-family: "Alata", sans-serif;
   word-wrap: break-word;
   -webkit-font-smoothing: antialiased;
 }
+
 
 /* Evita el zoom incorrecto y escalado raro en Chrome mobile */
 html {
