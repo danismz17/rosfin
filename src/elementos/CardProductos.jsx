@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
-const CardProductos = ({ producto }) => {
+const CardProductos = ({ producto, index }) => {
+
   const {
     nombre,
     descripcion,
@@ -47,21 +49,24 @@ const CardProductos = ({ producto }) => {
   }
   
   return (
-    <div
-      style={{
-        width: "350px",
-        height: "550px",
-        backgroundColor: "#4B5945",
-        borderRadius: "20px",
-        position: "relative",
-        display: "flex",
-        overflow: "hidden",
-        alignItems: "center",
-        flexDirection: "column",
-        padding: "16px",
-
-      }}
-    >
+<motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.4, delay: index * 0.1 }}
+  // Resto de tus estilos:
+  style={{
+    width: "350px",
+    height: "550px",
+    backgroundColor: "#4B5945",
+    borderRadius: "20px",
+    position: "relative",
+    display: "flex",
+    overflow: "hidden",
+    alignItems: "center",
+    flexDirection: "column",
+    padding: "16px",
+  }}
+>
       <span className="w-8 flex justify-center items-center">
         <img src={imagen || "/icons/default.png"} alt={nombre} />
       </span>
@@ -134,7 +139,7 @@ const CardProductos = ({ producto }) => {
   </span>
 </div>
 
-    </div>
+    </motion.div>
   );
 };
 

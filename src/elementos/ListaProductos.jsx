@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import CardProductos from '../elementos/CardProductos';
+import { AnimatePresence } from 'framer-motion';
 
 const ListaProductos = ({ productos, iconoCategoria }) => {
     const [busqueda, setBusqueda] = useState('');
@@ -29,9 +30,11 @@ const ListaProductos = ({ productos, iconoCategoria }) => {
             </form>
 
             <div className="w-full h-auto flex flex-wrap items-center justify-center gap-5 mt-4 p-4">
-                {productosFiltrados.map((item) => (
-                    <CardProductos key={item.slug} producto={{ ...item, imagen: iconoCategoria }} />
-                ))}
+                <AnimatePresence mode="wait">
+                    {productosFiltrados.map((item, index) => (
+                        <CardProductos index={index} key={item.slug} producto={{ ...item, imagen: iconoCategoria }} />
+                    ))}
+                </AnimatePresence>
 
                 {productosFiltrados.length === 0 && (
                     <p className="text-center text-gray-600 w-full mt-4">No se encontraron productos.</p>
