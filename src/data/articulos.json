@@ -3,7 +3,7 @@
         {
             "nombre": "Copas Hierro",
             "slug": "Copas-Hierro",
-            "descripcion": "Copas de hierro galvanizadas. Sello de Block de Motor",
+            "descripcion": "Copas de hierro galvanizadas. Sello de block de Motor",
             "precioPorMedida": {
                 "8mm": 0,
                 "9mm": 0,
@@ -184,16 +184,16 @@
                 "2 3/8",
                 "2 1/2"
             ],
-            "ImagenArticulo": "/icons/mecanicas.png",
+            "ImagenArticulo": "/img/productos/mecanica/mecanica-copadehierro.png",
             "tipoMaterial": "Hierro",
-            "uso": "Sello de Block / Terminaciones de caño.",
+            "uso": "Sello de block / Terminaciones de caño.",
             "enStock": true,
             "unidadVenta": "por unidad"
         },
         {
             "nombre": "copas bronce",
             "slug": "copas-bronce",
-            "descripcion": "Copas de Bronce. Sello de Block de motor",
+            "descripcion": "Copas de Bronce. Sello de block de motor",
             "precioPorMedida": {
                 "8mm": 0,
                 "9mm": 0,
@@ -374,9 +374,9 @@
                 "2 3/8",
                 "2 1/2"
             ],
-            "ImagenArticulo": "/icons/mecanicas.png",
+            "ImagenArticulo": "/img/productos/mecanica/mecanica-copadebronce.png",
             "tipoMaterial": "Bronce",
-            "uso": "Sello de Block / Terminaciones de Caño",
+            "uso": "Sello de block / Terminaciones de caño",
             "enStock": true,
             "unidadVenta": "por unidad"
         },
@@ -566,7 +566,7 @@
             ],
             "ImagenArticulo": "/img/productos/mecanica/mecanica-monedasbronce.png",
             "tipoMaterial": "Bronce",
-            "uso": "Sello de Block para Motor",
+            "uso": "Sello de block para Motor",
             "enStock": true,
             "unidadVenta": "por unidad"
         },
@@ -754,7 +754,7 @@
                 "2 5/8",
                 "2 3/4"
             ],
-            "ImagenArticulo": "/icons/mecanicas.png",
+            "ImagenArticulo": "/img/productos/mecanica/mecanica-arandelasuplementodehierro.png",
             "tipoMaterial": "Hierro galvanizado",
             "uso": "uso general",
             "enStock": true,
@@ -1139,7 +1139,7 @@
                 "7/8x28",
                 "1 x32"
             ],
-            "ImagenArticulo": "/icons/ferreteria.png",
+            "ImagenArticulo": "/img/productos/ferreteria/ferreteria-arandelacobreconexion.png",
             "tipoMaterial": "cobre",
             "uso": "uso general",
             "enStock": true,
@@ -1223,7 +1223,7 @@
                 "7/8x28",
                 "1 x32"
             ],
-            "ImagenArticulo": "/icons/ferreteria.png",
+            "ImagenArticulo": "/img/productos/ferreteria/ferreteria-arandelaaluminioconexion.png",
             "tipoMaterial": "Aluminio",
             "uso": "uso general",
             "enStock": true,
@@ -1245,7 +1245,7 @@
                 "20mm",
                 "30mm"
             ],
-            "ImagenArticulo": "/icons/ferreteria.png",
+            "ImagenArticulo": "/img/productos/ferreteria/ferreteria-arandelaparatecho.png",
             "tipoMaterial": "acero",
             "uso": "uso general",
             "enStock": true,
