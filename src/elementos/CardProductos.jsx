@@ -71,7 +71,7 @@ const CardProductos = ({ producto, index }) => {
       <AjustarNombre texto={nombre} />
 
       {descripcion && (
-        <p className="text-xs pb-4 text-white text-center font-md ">
+        <p className="text-xs pb-4 text-blancoRosfin text-center font-md ">
           {capitalizarPrimeraLetra(descripcion)}
         </p>
       )}
@@ -81,7 +81,7 @@ const CardProductos = ({ producto, index }) => {
       </span>
 
       <div className="w-full flex justify-center items-centergap-x-0">
-        <ol className="w-full pl-12 flex justify-center flex-col items-start gap-y-2 mt-4">
+        <ol className="w-full pl-8  flex justify-center flex-col items-start gap-y-2 mt-4">
           <li className="flex gap-x-4 justify-center items-center">
             <span className="w-6">
               <img src='/product-icons/material.png' alt="" />
