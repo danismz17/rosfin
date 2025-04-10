@@ -381,7 +381,7 @@
             "unidadVenta": "por unidad"
         },
         {
-            "nombre": "monedas bronce",
+            "nombre": "Monedas bronce",
             "slug": "monedas-bronce",
             "descripcion": "Monedas de Bronce / Sello de block para motor",
             "precioPorMedida": {
@@ -564,14 +564,14 @@
                 "2 3/8",
                 "2 1/2"
             ],
-            "ImagenArticulo": "/icons/mecanicas.png",
+            "ImagenArticulo": "/img/productos/mecanica/mecanica-monedasbronce.png",
             "tipoMaterial": "Bronce",
             "uso": "Sello de Block para Motor",
             "enStock": true,
             "unidadVenta": "por unidad"
         },
         {
-            "nombre": "tapa de cilindro",
+            "nombre": "Tapa de cilindro",
             "slug": "tapa-de-cilindro",
             "descripcion": "Tapa metálica para cierre hermético de cilindros.",
             "precioPorMedida": {
@@ -631,9 +631,9 @@
             "unidadVenta": "por unidad"
         },
         {
-            "nombre": "arandelas punta de eje",
-            "slug": "arandelas-punta-de-eje",
-            "descripcion": "Arandelas especiales para asegurar puntas de eje.",
+            "nombre": "Arandela punta de eje",
+            "slug": "Arandela-punta-de-eje",
+            "descripcion": "Arandela especiales para asegurar puntas de eje.",
             "precioPorMedida": {
                 "9/16": 0,
                 "5/8": 0,
@@ -670,16 +670,16 @@
                 "2 1/2",
                 "2 3/4"
             ],
-            "ImagenArticulo": "/icons/mecanicas.png",
+            "ImagenArticulo": "/img/productos/mecanica/mecanica-arandelaspuntadeeje.png",
             "tipoMaterial": "Hierro galvanizado",
             "uso": "mecanica",
             "enStock": true,
             "unidadVenta": "por unidad"
         },
         {
-            "nombre": "arandelas conicas para llanta",
-            "slug": "arandelas-conicas-para-llanta",
-            "descripcion": "Arandelas cónicas para montaje de llantas.",
+            "nombre": "Arandela conicas para llanta",
+            "slug": "Arandela-conicas-para-llanta",
+            "descripcion": "Arandela cónicas para montaje de llantas.",
             "precioPorMedida": {
                 "7/16": 0,
                 "1/2": 0,
@@ -696,16 +696,16 @@
                 "3/4",
                 "7/8"
             ],
-            "ImagenArticulo": "/icons/mecanicas.png",
+            "ImagenArticulo": "/img/productos/mecanica/mecanica-arandelasconicasparallanta.png",
             "tipoMaterial": "hierro galvanizado",
             "uso": "mecanica",
             "enStock": true,
             "unidadVenta": "por unidad"
         },
         {
-            "nombre": "arand suplemento de hierro",
+            "nombre": "Arandela suplemento de hierro",
             "slug": "arand-suplemento-de-hierro",
-            "descripcion": "Arandelas de suplemento hechas en hierro para nivelación.",
+            "descripcion": "Arandela de suplemento hechas en hierro para nivelación.",
             "precioPorMedida": {
                 "1/2": 0,
                 "9/16": 0,
@@ -792,7 +792,7 @@
             "unidadVenta": "por cantidad de 100"
         },
         {
-            "nombre": "grampas de cepo",
+            "nombre": "Grampas de cepo",
             "slug": "grampas-de-cepo",
             "descripcion": "Grampas tipo cepo para fijación segura.",
             "precioPorMedida": {
@@ -818,8 +818,8 @@
             "unidadVenta": "por unidad"
         },
         {
-            "nombre": "caja de centro galv",
-            "slug": "caja-de-centro-galv",
+            "nombre": "Caja de centro galvanizada",
+            "slug": "caja-de-centro-galvanizada",
             "descripcion": "Caja galvanizada para centro de conexión eléctrica.",
             "precioPorMedida": {},
             "medidasDisponibles": [],
@@ -830,8 +830,8 @@
             "unidadVenta": "por unidad"
         },
         {
-            "nombre": "caja de brazo galv",
-            "slug": "caja-de-brazo-galv",
+            "nombre": "Caja de brazo galvanizada",
+            "slug": "caja-de-brazo-galvanizada",
             "descripcion": "Caja galvanizada para ramificaciones.",
             "precioPorMedida": {},
             "medidasDisponibles": [],
@@ -842,31 +842,31 @@
             "unidadVenta": "por unidad"
         },
         {
-            "nombre": "caja llana galv",
-            "slug": "caja-llana-galv",
+            "nombre": "Caja llana galvanizada",
+            "slug": "caja-llana-galvanizada",
             "descripcion": "Caja eléctrica galvanizada, diseño llano.",
             "precioPorMedida": {},
             "medidasDisponibles": [],
-            "ImagenArticulo": "/icons/electricidad.png",
+            "ImagenArticulo": "/img/productos/electricidad/electricidad-cajallanagalv.png",
             "tipoMaterial": "hierro Galvanizado",
             "uso": "Instalaciones electricas",
             "enStock": true,
             "unidadVenta": "por unidad"
         },
         {
-            "nombre": "caja honda galv",
-            "slug": "caja-honda-galv",
+            "nombre": "Caja honda galvanizada",
+            "slug": "caja-honda-galvanizada",
             "descripcion": "Caja eléctrica profunda galvanizada.",
             "precioPorMedida": {},
             "medidasDisponibles": [],
-            "ImagenArticulo": "/icons/electricidad.png",
+            "ImagenArticulo": "/img/productos/electricidad/electricidad-cajaondagalv.png",
             "tipoMaterial": "hierro Galvanizado",
             "uso": "Instalaciones electricas",
             "enStock": true,
             "unidadVenta": "por unidad"
         },
         {
-            "nombre": "fabricacion de tableros",
+            "nombre": "Fabricacion de tableros",
             "slug": "fabricacion-de-tableros",
             "descripcion": "Diseño y construcción de tableros eléctricos.",
             "precioPorMedida": {},
@@ -878,7 +878,7 @@
             "unidadVenta": "por unidad"
         },
         {
-            "nombre": "accesorios para tableros",
+            "nombre": "Accesorios para tableros",
             "slug": "accesorios-para-tableros",
             "descripcion": "Componentes varios para tableros eléctricos.",
             "precioPorMedida": {},
@@ -892,9 +892,9 @@
     ],
     "ferreteria": [
         {
-            "nombre": "arandelas planas hierro",
-            "slug": "arandelas-planas-hierro",
-            "descripcion": "Arandelas planas de hierro, uso general.",
+            "nombre": "Arandela planas hierro",
+            "slug": "Arandela-planas-hierro",
+            "descripcion": "Arandela planas de hierro, uso general.",
             "precioPorMedida": {
                 "1/8 x 10 x 0,9": 0,
                 "5/32 x 11,5 x 0,9": 0,
@@ -948,9 +948,9 @@
             "unidadVenta": "por unidad"
         },
         {
-            "nombre": "arandelas reforzadas",
-            "slug": "arandelas-reforzadas",
-            "descripcion": "Arandelas de alta resistencia reforzadas.",
+            "nombre": "Arandela reforzadas",
+            "slug": "Arandela-reforzadas",
+            "descripcion": "Arandela de alta resistencia reforzadas.",
             "precioPorMedida": {
                 "1/8 x 10 x 0,9": 0,
                 "5/32 x 11,5 x 0,9": 0,
@@ -1004,9 +1004,9 @@
             "unidadVenta": "por unidad"
         },
         {
-            "nombre": "arandelas chapista",
-            "slug": "arandelas-chapista",
-            "descripcion": "Arandelas utilizadas en chapistería y carrocería.",
+            "nombre": "Arandela chapista",
+            "slug": "Arandela-chapista",
+            "descripcion": "Arandela utilizadas en chapistería y carrocería.",
             "precioPorMedida": {
                 "3/16 x 24 x 1,5": 0,
                 "1/4 x 27 x 2": 0,
@@ -1032,9 +1032,9 @@
             "unidadVenta": "por unidad"
         },
         {
-            "nombre": "arandelas carrocero",
-            "slug": "arandelas-carrocero",
-            "descripcion": "Arandelas grandes para carrocerías.",
+            "nombre": "Arandela carrocero",
+            "slug": "Arandela-carrocero",
+            "descripcion": "Arandela grandes para carrocerías.",
             "precioPorMedida": {
                 "1/4 x 61": 0,
                 "5/16 x 61": 0,
@@ -1062,9 +1062,9 @@
             "unidadVenta": "por unidad"
         },
         {
-            "nombre": "arand. cobre conexión",
-            "slug": "arand.-cobre-conexión",
-            "descripcion": "Arandelas de cobre para conexiones.",
+            "nombre": "Arandela cobre conexión",
+            "slug": "Arandela-cobre-conexión",
+            "descripcion": "Arandela de cobre para conexiones.",
             "precioPorMedida": {
                 "4x8": 0,
                 "6x11": 0,
@@ -1139,16 +1139,16 @@
                 "7/8x28",
                 "1 x32"
             ],
-            "ImagenArticulo": "/img/productos/ferreteria/ferreteria-",
+            "ImagenArticulo": "/icons/ferreteria.png",
             "tipoMaterial": "cobre",
             "uso": "uso general",
             "enStock": true,
             "unidadVenta": "por unidad"
         },
         {
-            "nombre": "arand. aluminio conexión",
-            "slug": "arand.-aluminio-conexión",
-            "descripcion": "Arandelas de aluminio para Conexiones.",
+            "nombre": "Arandela aluminio conexión",
+            "slug": "Arandela-aluminio-conexión",
+            "descripcion": "Arandela de aluminio para Conexiones.",
             "precioPorMedida": {
                 "4x8": 0,
                 "6x11": 0,
@@ -1223,16 +1223,16 @@
                 "7/8x28",
                 "1 x32"
             ],
-            "ImagenArticulo": "/img/productos/ferreteria/ferreteria-",
+            "ImagenArticulo": "/icons/ferreteria.png",
             "tipoMaterial": "Aluminio",
             "uso": "uso general",
             "enStock": true,
             "unidadVenta": "por unidad"
         },
         {
-            "nombre": "arandelas para techo",
-            "slug": "arandelas-para-techo",
-            "descripcion": "Arandelas específicas para fijaciones en techos.",
+            "nombre": "Arandela para techo",
+            "slug": "Arandela-para-techo",
+            "descripcion": "Arandela específicas para fijaciones en techos.",
             "precioPorMedida": {
                 "5mm": 10,
                 "10mm": 18,
@@ -1245,15 +1245,15 @@
                 "20mm",
                 "30mm"
             ],
-            "ImagenArticulo": "/img/productos/ferreteria/ferreteria-",
+            "ImagenArticulo": "/icons/ferreteria.png",
             "tipoMaterial": "acero",
             "uso": "uso general",
             "enStock": true,
             "unidadVenta": "por unidad"
         },
         {
-            "nombre": "mariposas hierro galv",
-            "slug": "mariposas-hierro-galv",
+            "nombre": "mariposas hierro galvanizada",
+            "slug": "mariposas-hierro-galvanizada",
             "descripcion": "Tuercas mariposa galvanizadas.",
             "precioPorMedida": {
                 "1/8": 0,
@@ -1282,9 +1282,9 @@
             "unidadVenta": "por unidad"
         },
         {
-            "nombre": "arandelas especiales a medida",
-            "slug": "arandelas-especiales-a-medida",
-            "descripcion": "Arandelas personalizadas bajo especificación.",
+            "nombre": "Arandela especiales a medida",
+            "slug": "Arandela-especiales-a-medida",
+            "descripcion": "Arandela personalizadas bajo especificación.",
             "precioPorMedida": {},
             "medidasDisponibles": [],
             "ImagenArticulo": "/img/productos/ferreteria/ferreteria-arandelasespecialesamedida.png",

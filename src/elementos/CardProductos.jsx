@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const CardProductos = ({ producto }) => {
   const {
@@ -20,11 +20,37 @@ const CardProductos = ({ producto }) => {
 
   const [medidaSeleccionada, setMedidaSeleccionada] = useState(medidasArray[0]);
 
+  function AjustarNombre({ texto }) {
+    const [fontSize, setFontSize] = useState('1.25rem');
+  
+    const capitalizar = (str) =>
+      str.charAt(0).toUpperCase() + str.slice(1);
+  
+    useEffect(() => {
+      if (texto.length > 30) {
+        setFontSize('0.875rem');
+      } else if (texto.length > 20) {
+        setFontSize('1rem');
+      } else {
+        setFontSize('1.25rem');
+      }
+    }, [texto]);
+  
+    return (
+      <h5
+        className="mt-2 text-center text-white whitespace-nowrap overflow-hidden text-ellipsis"
+        style={{ fontSize }}
+      >
+        {capitalizar(texto)}
+      </h5>
+    );
+  }
+  
   return (
     <div
       style={{
         width: "350px",
-        height: "520px",
+        height: "550px",
         backgroundColor: "#4B5945",
         borderRadius: "20px",
         position: "relative",
@@ -40,9 +66,10 @@ const CardProductos = ({ producto }) => {
         <img src={imagen || "/icons/default.png"} alt={nombre} />
       </span>
 
-      <h5 className="mt-2 text-center leading-none">{nombre}</h5>
+      <AjustarNombre texto={nombre} />
+
       {descripcion && (
-        <p className="text-xs pb-4 text-blancoRosfin text-center font-md mt-4">{descripcion}</p>
+        <p className="text-xs pb-4 text-white text-center font-md ">{descripcion}</p>
       )}
 
       <span className="w-48 flex justify-center items-center mt-2">
@@ -95,23 +122,18 @@ const CardProductos = ({ producto }) => {
           </li>
         )}
       </ol>
-
-
-
-      {/* <div className="w-full flex justify-center items-center flex-col gap-x-0">
-        <h3 className="text-white p-0 m-0">
-          {precios[medidaSeleccionada] ? `$${precios[medidaSeleccionada]}` : 'Consultar'}
-        </h3>
-        <p className="text-xs pb-4 text-white">{unidadVenta}</p>
-      </div> */}
-
-
-
-
-
-
-
       </div>
+
+      <div className="absolute bottom-0 left-0 w-full flex justify-between items-center px-4 pb-4">
+  <span className="flex-grow h-[2px] bg-naranjaRosfin" />
+
+  <span className="px-2">
+    <p className="text-[12px] text-end text-white vina leading-tight">
+      Metalmind <br /> Rosfin
+    </p>
+  </span>
+</div>
+
     </div>
   );
 };
